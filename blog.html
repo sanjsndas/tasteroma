@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasteroma — Blog: Aromatic Adventures & Culinary Insights</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Cream White */
+            color: #263238; /* Bold Charcoal */
+        }
+        .text-zesty-orange { color: #FF7043; }
+        .bg-zesty-orange { background-color: #FF7043; }
+        .text-warm-spice-brown { color: #8D6E63; }
+        .bg-warm-spice-brown { background-color: #8D6E63; }
+        .text-fresh-herb-green { color: #81C784; }
+        .bg-fresh-herb-green { background-color: #81C784; }
+        .bg-cream-white { background-color: #FFF8E1; }
+        .text-bold-charcoal { color: #263238; }
+        .bg-bold-charcoal { background-color: #263238; }
+
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF8E1; /* Cream White */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF7043; /* Zesty Orange */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e65100; /* Darker Zesty Orange */
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+    <!-- Header -->
+    <header class="bg-cream-white shadow-lg py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/FF7043/FFF?text=T" alt="Tasteroma Logo" class="rounded-full shadow-md">
+                <h1 class="text-2xl font-bold text-bold-charcoal">Tasteroma</h1>
+            </div>
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Home</a></li>
+                    <li><a href="blog.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Blog</a></li>
+                    <li><a href="privacy.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Privacy</a></li>
+                    <li><a href="terms.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Terms</a></li>
+                    <li><a href="cookies.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Cookies</a></li>
+                    <li><a href="contact.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20 py-16 px-6 md:px-12 bg-cream-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-bold-charcoal text-center mb-10">Tasteroma Blog: Your Guide to Aromatic Adventures</h2>
+            <p class="text-lg text-warm-spice-brown text-center mb-12 leading-relaxed">
+                Dive into the world of scents, spices, and sensational flavors with the Tasteroma Blog. Here, we share expert tips, delve into culinary history, explore global aromatic traditions, and bring you stories from kitchens around the world. Whether you're looking to master a new technique, discover an exotic spice, or simply find inspiration for your next aromatic meal, you'll find it here.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Blog Post 1 -->
+                <article class="bg-warm-spice-brown text-cream-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="b1.webp" alt="Grinding Spices" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">The Art of Toasting Spices: Unlocking Hidden Aromas</h3>
+                        <p class="text-sm mb-4 italic">Published on: July 1, 2025 | By: Aroma Expert</p>
+                        <p class="text-md leading-relaxed mb-4">
+                            Discover the transformative power of toasting whole spices. This simple technique amplifies their flavor and releases complex aromatic compounds that elevate any dish. Learn the best practices for dry roasting, blooming in oil, and grinding your own spice blends for unparalleled freshness and fragrance. From cumin to coriander, we break down how to get the most out of your aromatic arsenal.
+                        </p>
+                        <a href="#" class="inline-block bg-zesty-orange text-cream-white font-semibold py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-fresh-herb-green text-bold-charcoal rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="b2.avif" alt="Herb Garden" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Beyond Garnish: The Aromatic Power of Fresh Herbs</h3>
+                        <p class="text-sm mb-4 italic">Published on: June 25, 2025 | By: Green Thumb Chef</p>
+                        <p class="text-md leading-relaxed mb-4">
+                            Fresh herbs are more than just a pretty topping; they are aromatic powerhouses that can define a dish. This post explores how to properly use and store herbs like basil, cilantro, mint, and rosemary to maximize their volatile oils and vibrant scents. Learn when to add them for peak freshness and how they can transform a simple meal into a fragrant masterpiece.
+                        </p>
+                        <a href="#" class="inline-block bg-bold-charcoal text-cream-white font-semibold py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-zesty-orange text-cream-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="b3.avif" alt="Global Street Food Scene" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Street Food Scents: A Global Aromatic Tour</h3>
+                        <p class="text-sm mb-4 italic">Published on: June 18, 2025 | By: Culinary Explorer</p>
+                        <p class="text-md leading-relaxed mb-4">
+                            From the sizzling woks of Bangkok to the smoky grills of Mexico City, street food is a feast for the senses, especially the nose. Join us on a virtual tour as we explore the iconic aromatic profiles of street eats from around the world. Discover the spices and techniques that make these dishes so irresistibly fragrant and how you can recreate them at home.
+                        </p>
+                        <a href="#" class="inline-block bg-cream-white text-zesty-orange font-semibold py-2 px-4 rounded-full hover:bg-gray-200 transition duration-300">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-warm-spice-brown text-cream-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="b4.webp" alt="Slow Cooking Pot" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">The Patience of Aroma: Why Slow Cooking is Key</h3>
+                        <p class="text-sm mb-4 italic">Published on: June 10, 2025 | By: Comfort Food Lover</p>
+                        <p class="text-md leading-relaxed mb-4">
+                            Some of the most profound aromas develop over time. This post delves into the magic of slow cooking, explaining how extended simmering and braising allow flavors to meld and aromatic compounds to deepen, creating incredibly rich and complex scents that fill your home for hours. We share tips for maximizing fragrance in your stews, curries, and roasts.
+                        </p>
+                        <a href="#" class="inline-block bg-zesty-orange text-cream-white font-semibold py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="bg-fresh-herb-green text-bold-charcoal rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="b5.webp" alt="Food and Wine Pairing" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Aromatic Harmony: Pairing Scents for Perfect Meals</h3>
+                        <p class="text-sm mb-4 italic">Published on: June 3, 2025 | By: Sensory Chef</p>
+                        <p class="text-md leading-relaxed mb-4">
+                            Just as flavors complement each other, so do aromas. This article explores the art and science of aromatic pairing, guiding you on how to combine spices, herbs, and other ingredients to create a harmonious sensory experience. Learn about classic pairings and discover new, unexpected combinations that will delight your nose and your palate.
+                        </p>
+                        <a href="#" class="inline-block bg-bold-charcoal text-cream-white font-semibold py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="bg-zesty-orange text-cream-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="b6.webp" alt="Vanilla Beans" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">The Sweetest Scents: Aromatic Desserts Unveiled</h3>
+                        <p class="text-sm mb-4 italic">Published on: May 28, 2025 | By: Dessert Enthusiast</p>
+                        <p class="text-md leading-relaxed mb-4">
+                            Aroma is just as vital in desserts as it is in savory dishes. This post delves into the world of sweet aromatics, from the comforting warmth of vanilla and cinnamon to the exotic notes of cardamom and rosewater. Learn how to infuse your baked goods and confections with captivating fragrances that make every bite a sensory delight.
+                        </p>
+                        <a href="#" class="inline-block bg-cream-white text-zesty-orange font-semibold py-2 px-4 rounded-full hover:bg-gray-200 transition duration-300">Read More</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination or More Posts Link -->
+            <div class="text-center mt-16">
+                <a href="#" class="bg-zesty-orange text-cream-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105 text-lg">Load More Posts</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-bold-charcoal text-black py-12 px-6 md:px-12 rounded-t-lg shadow-inner">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- About Tasteroma -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">About Tasteroma</h5>
+                <p class="text-sm leading-relaxed">
+                    Tasteroma is your premier destination for recipes that engage all your senses. We focus on the incredible interplay of taste and aroma, bringing you global flavors designed to fill your kitchen with unforgettable fragrances. Join our community and embark on a sensory cooking adventure.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">Quick Links</h5>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Home</a></li>
+                    <li><a href="blog.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Blog</a></li>
+                    <li><a href="privacy.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact & Address -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">Contact Us</h5>
+                <p class="text-sm mb-2">Email: <a href="mailto:info@tasteroma.com" class="text-cream-white hover:text-zesty-orange transition duration-300">info@tasteroma.com</a></p>
+                <p class="text-sm mb-2">Phone: +91 12345 67890</p>
+                <p class="text-sm mb-2"><strong>Address:</strong></p>
+                <p class="text-sm leading-relaxed">
+                    Tasteroma Headquarters<br>
+                    123 Aroma Lane, Spice District<br>
+                    Flavor City, Delhi 110001<br>
+                    India
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-warm-spice-brown mt-8 pt-8 text-center text-sm">
+            &copy; 2025 Tasteroma. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

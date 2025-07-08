@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasteroma — Where Taste Meets Aroma - Recipes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Cream White */
+            color: #263238; /* Bold Charcoal */
+        }
+        .text-zesty-orange { color: #FF7043; }
+        .bg-zesty-orange { background-color: #FF7043; }
+        .text-warm-spice-brown { color: #8D6E63; }
+        .bg-warm-spice-brown { background-color: #8D6E63; }
+        .text-fresh-herb-green { color: #81C784; }
+        .bg-fresh-herb-green { background-color: #81C784; }
+        .bg-cream-white { background-color: #FFF8E1; }
+        .text-bold-charcoal { color: #263238; }
+        .bg-bold-charcoal { background-color: #263238; }
+
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF8E1; /* Cream White */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF7043; /* Zesty Orange */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e65100; /* Darker Zesty Orange */
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+    <!-- Header -->
+    <header class="bg-cream-white shadow-lg py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/FF7043/FFF?text=T" alt="Tasteroma Logo" class="rounded-full shadow-md">
+                <h1 class="text-2xl font-bold text-bold-charcoal">Tasteroma</h1>
+            </div>
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Home</a></li>
+                    <li><a href="blog.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Blog</a></li>
+                    <li><a href="privacy.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Privacy</a></li>
+                    <li><a href="terms.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Terms</a></li>
+                    <li><a href="cookies.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Cookies</a></li>
+                    <li><a href="contact.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center text-center overflow-hidden rounded-b-3xl shadow-xl">
+            <div class="relative z-10 p-8 bg-black bg-opacity-40 rounded-xl shadow-2xl max-w-3xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-extrabold text-cream-white mb-6 leading-tight drop-shadow-lg">Where Taste Meets Aroma.</h2>
+                <p class="text-xl md:text-2xl text-cream-white mb-10 drop-shadow-md">Cook. Smell. Savor. Flavors You Can Smell Before You Taste.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#recipe-library" class="bg-zesty-orange text-cream-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105 text-lg">Explore Recipes</a>
+                    <a href="#featured-recipe" class="bg-fresh-herb-green text-bold-charcoal font-bold py-4 px-8 rounded-full shadow-lg hover:bg-green-600 transition duration-300 transform hover:scale-105 text-lg">Featured Recipe</a>
+                    <a href="#community" class="bg-cream-white text-bold-charcoal font-bold py-4 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105 text-lg">Share Your Creations</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Essence -->
+        <section class="py-16 px-6 md:px-12 bg-cream-white">
+            <div class="container mx-auto text-center max-w-4xl">
+                <h3 class="text-4xl font-bold text-bold-charcoal mb-8">Our Brand Essence: Tasteroma</h3>
+                <p class="text-lg text-warm-spice-brown mb-6 leading-relaxed">
+                    Tasteroma is more than just a recipe platform; it's a culinary journey designed to awaken your senses. We believe that the true magic of cooking begins even before the first bite – with the captivating aromas that fill your kitchen. Our mission is to guide you through a world of bold spices, comforting meals, and globally inspired dishes, all crafted to deliver an unparalleled aromatic experience. We're here to transform your cooking into a multisensory adventure, where every ingredient contributes to a symphony of flavors and fragrances.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-warm-spice-brown text-cream-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                        <h4 class="text-2xl font-semibold mb-4">Global Flavors, Aroma-Driven</h4>
+                        <p class="text-md leading-relaxed">
+                            Dive into a curated collection of recipes from every corner of the globe, meticulously chosen for their ability to produce incredible aromas. From the pungent spices of an Indian curry to the herbaceous notes of a Mediterranean stew, we emphasize techniques that unlock and amplify these fragrant profiles. Our recipes aren't just about taste; they're about creating an immersive aromatic environment in your home.
+                        </p>
+                    </div>
+                    <div class="bg-warm-spice-brown text-cream-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                        <h4 class="text-2xl font-semibold mb-4">For Every Culinary Explorer</h4>
+                        <p class="text-md leading-relaxed">
+                            Whether you're a seasoned home cook looking for new inspiration, a food lover eager to explore diverse cuisines, or an adventurous eater ready to experiment with bold flavors, Tasteroma is your ideal companion. Our platform is designed to be accessible and engaging for everyone, providing clear instructions and insightful tips to help you master aromatic cooking.
+                        </p>
+                    </div>
+                    <div class="bg-warm-spice-brown text-cream-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                        <h4 class="text-2xl font-semibold mb-4">Engage All Your Senses</h4>
+                        <p class="text-md leading-relaxed">
+                            Tasteroma goes beyond just recipes. We offer a holistic approach to cooking that engages all your senses. Discover expert cooking tips focused on aroma enhancement, delve into fascinating stories behind global spices, and connect with a vibrant community of fellow food enthusiasts. Experience cooking as a truly immersive, sensory art form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Identity Snapshot -->
+        <section class="py-16 px-6 md:px-12 bg-fresh-herb-green text-bold-charcoal">
+            <div class="container mx-auto text-center max-w-4xl">
+                <h3 class="text-4xl font-bold mb-8">Brand Identity Snapshot</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">Brand Name: Tasteroma</h4>
+                        <p class="text-lg">A harmonious blend of 'taste' and 'aroma', perfectly encapsulating our core philosophy.</p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">Taglines</h4>
+                        <ul class="list-disc list-inside text-lg text-left mx-auto max-w-xs">
+                            <li>"Where Taste Meets Aroma."</li>
+                            <li>"Cook. Smell. Savor."</li>
+                            <li>"Flavors You Can Smell Before You Taste."</li>
+                        </ul>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">Tone</h4>
+                        <p class="text-lg">Bold, sensory, approachable, global, food-focused. Our communication is designed to be inviting and inspiring, encouraging exploration and experimentation in the kitchen.</p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">Audience</h4>
+                        <p class="text-lg">Foodies, home cooks, spice lovers, global cuisine enthusiasts. We cater to anyone passionate about elevating their cooking through the power of aroma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Sections - Aroma-Focused Recipe Library -->
+        <section id="recipe-library" class="py-16 px-6 md:px-12 bg-warm-spice-brown text-cream-white">
+            <div class="container mx-auto max-w-6xl">
+                <h3 class="text-4xl font-bold text-center mb-12">Aroma-Focused Recipe Library</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Welcome to the heart of Tasteroma – our meticulously curated recipe library. Unlike conventional recipe sites, we prioritize not just the taste, but the captivating aroma each dish promises to deliver. Our extensive collection spans the globe, offering an unparalleled journey through diverse culinary traditions, all unified by their aromatic intensity. Each recipe is categorized to help you find exactly what your senses crave, whether it's the comforting scent of a slow-cooked stew or the exhilarating fragrance of a fiery stir-fry. We believe that the aroma is the first invitation to a truly memorable meal, and our recipes are designed to ensure that invitation is irresistible.
+                </p>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Explore Our Recipes by Aromatic Intensity & Category:</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Recipe Card: Spiced Pumpkin Soup -->
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg text-bold-charcoal">
+                        <img src="p1.webp" alt="Spiced Pumpkin Soup" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                        <h5 class="text-2xl font-bold mb-3">Spiced Pumpkin Soup with Crispy Sage</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            A comforting autumn classic, elevated by the warm, inviting aromas of cinnamon, nutmeg, and a hint of ginger. The crispy sage adds an earthy, herbaceous top note. Perfect for a cozy evening.
+                        </p>
+                        <ul class="list-disc list-inside text-sm mb-4">
+                            <li><span class="font-semibold">Key Aromatics:</span> Cinnamon, Nutmeg, Ginger, Sage</li>
+                            <li><span class="font-semibold">Prep Time:</span> 20 min</li>
+                            <li><span class="font-semibold">Cook Time:</span> 45 min</li>
+                        </ul>
+                        <div class="flex items-center text-zesty-orange font-semibold mb-4">
+                            Aroma Meter: <span class="ml-2 text-xl">⭐⭐⭐</span>
+                        </div>
+                        <a href="#pumpkin-soup-recipe" class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</a>
+                    </div>
+
+                    <!-- Recipe Card: Lemongrass & Ginger Stir-fry -->
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg text-bold-charcoal">
+                        <img src="p2.webp" alt="Lemongrass & Ginger Stir-fry" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                        <h5 class="text-2xl font-bold mb-3">Zesty Lemongrass & Ginger Chicken Stir-fry</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            An invigorating stir-fry bursting with the bright, citrusy notes of lemongrass and the pungent warmth of fresh ginger. Quick to prepare, yet delivers an explosion of fresh, vibrant aromas.
+                        </p>
+                        <ul class="list-disc list-inside text-sm mb-4">
+                            <li><span class="font-semibold">Key Aromatics:</span> Lemongrass, Ginger, Garlic, Cilantro</li>
+                            <li><span class="font-semibold">Prep Time:</span> 15 min</li>
+                            <li><span class="font-semibold">Cook Time:</span> 20 min</li>
+                        </ul>
+                        <div class="flex items-center text-zesty-orange font-semibold mb-4">
+                            Aroma Meter: <span class="ml-2 text-xl">⭐⭐⭐⭐</span>
+                        </div>
+                        <a href="#lemongrass-stirfry-recipe" class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</a>
+                    </div>
+
+                    <!-- Recipe Card: Moroccan Lamb Tagine -->
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg text-bold-charcoal">
+                        <img src="p3.webp" alt="Moroccan Lamb Tagine" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                        <h5 class="text-2xl font-bold mb-3">Slow-Cooked Moroccan Lamb Tagine with Apricots</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            A truly immersive aromatic experience. This tagine slowly releases complex layers of saffron, ginger, cinnamon, and sweet dried apricots, filling your home with exotic, comforting scents.
+                        </p>
+                        <ul class="list-disc list-inside text-sm mb-4">
+                            <li><span class="font-semibold">Key Aromatics:</span> Saffron, Ginger, Cinnamon, Cumin, Coriander</li>
+                            <li><span class="font-semibold">Prep Time:</span> 30 min</li>
+                            <li><span class="font-semibold">Cook Time:</span> 3 hours</li>
+                        </ul>
+                        <div class="flex items-center text-zesty-orange font-semibold mb-4">
+                            Aroma Meter: <span class="ml-2 text-xl">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <a href="#lamb-tagine-recipe" class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</a>
+                    </div>
+
+                    <!-- Add more recipe cards here following the same structure -->
+                    <!-- Recipe Card: Fiery Thai Green Curry -->
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg text-bold-charcoal">
+                        <img src="p4.webp" alt="Fiery Thai Green Curry" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                        <h5 class="text-2xl font-bold mb-3">Fiery Thai Green Curry with Basil</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Ignite your senses with this bold and spicy Thai green curry. The vibrant aromas of lemongrass, galangal, kaffir lime leaves, and fresh basil create an intoxicating, pungent fragrance.
+                        </p>
+                        <ul class="list-disc list-inside text-sm mb-4">
+                            <li><span class="font-semibold">Key Aromatics:</span> Lemongrass, Galangal, Kaffir Lime, Basil, Green Chilies</li>
+                            <li><span class="font-semibold">Prep Time:</span> 25 min</li>
+                            <li><span class="font-semibold">Cook Time:</span> 30 min</li>
+                        </ul>
+                        <div class="flex items-center text-zesty-orange font-semibold mb-4">
+                            Aroma Meter: <span class="ml-2 text-xl">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <a href="#thai-green-curry-recipe" class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</a>
+                    </div>
+
+                    <!-- Recipe Card: Mediterranean Quinoa Salad -->
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg text-bold-charcoal">
+                        <img src="p5.webp" alt="Mediterranean Quinoa Salad" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                        <h5 class="text-2xl font-bold mb-3">Bright Mediterranean Quinoa Salad</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            A refreshing and light salad with the crisp, zesty aromas of fresh lemon, parsley, and cucumber. Perfect for a light lunch or a vibrant side dish, bursting with natural fragrance.
+                        </p>
+                        <ul class="list-disc list-inside text-sm mb-4">
+                            <li><span class="font-semibold">Key Aromatics:</span> Lemon Zest, Fresh Parsley, Mint, Cucumber</li>
+                            <li><span class="font-semibold">Prep Time:</span> 15 min</li>
+                            <li><span class="font-semibold">Cook Time:</span> 20 min (for quinoa)</li>
+                        </ul>
+                        <div class="flex items-center text-zesty-orange font-semibold mb-4">
+                            Aroma Meter: <span class="ml-2 text-xl">⭐⭐⭐</span>
+                        </div>
+                        <a href="#quinoa-salad-recipe" class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</a>
+                    </div>
+
+                    <!-- Recipe Card: Cardamom & Pistachio Cake -->
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg text-bold-charcoal">
+                        <img src="p6.webp" alt="Cardamom & Pistachio Cake" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                        <h5 class="text-2xl font-bold mb-3">Fragrant Cardamom & Pistachio Cake</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            A delightful dessert that fills your kitchen with the warm, nutty, and subtly floral aroma of green cardamom. The pistachios add a beautiful texture and complementary scent.
+                        </p>
+                        <ul class="list-disc list-inside text-sm mb-4">
+                            <li><span class="font-semibold">Key Aromatics:</span> Green Cardamom, Rosewater, Pistachio</li>
+                            <li><span class="font-semibold">Prep Time:</span> 25 min</li>
+                            <li><span class="font-semibold">Cook Time:</span> 40 min</li>
+                        </ul>
+                        <div class="flex items-center text-zesty-orange font-semibold mb-4">
+                            Aroma Meter: <span class="ml-2 text-xl">⭐⭐⭐⭐</span>
+                        </div>
+                        <a href="#cardamom-cake-recipe" class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</a>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">"Smell First" Icons: Your Aromatic Guide</h4>
+                    <p class="text-lg mb-8 leading-relaxed">
+                        To help you navigate our aroma-focused library, each recipe is accompanied by our unique "Smell First" icons, providing a visual indicator of its aromatic intensity and profile. These icons are designed to give you an immediate sense of what to expect, allowing you to choose recipes based on the fragrance you desire.
+                    </p>
+                    <div class="flex justify-center items-center space-x-8 mb-8">
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl">👃</span>
+                            <p class="text-xl font-semibold mt-2">Mild</p>
+                            <p class="text-sm">Subtle, delicate notes</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl">👃👃</span>
+                            <p class="text-xl font-semibold mt-2">Moderate</p>
+                            <p class="text-sm">Pleasantly noticeable</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl">👃👃👃</span>
+                            <p class="text-xl font-semibold mt-2">Bold</p>
+                            <p class="text-sm">Distinct, strong presence</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl">👃👃👃👃</span>
+                            <p class="text-xl font-semibold mt-2">Intense</p>
+                            <p class="text-sm">Pervasive, captivating</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl">👃👃👃👃👃</span>
+                            <p class="text-xl font-semibold mt-2">Explosive</p>
+                            <p class="text-sm">Unforgettable, room-filling</p>
+                        </div>
+                    </div>
+                    <p class="text-lg leading-relaxed">
+                        These icons, combined with our detailed recipe descriptions, ensure you're always in control of your aromatic journey. Whether you're looking for a gentle background scent or a powerful fragrance to fill your entire home, Tasteroma has a recipe for you. Our commitment to aroma means every dish is a sensory delight from start to finish.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Recipe Section -->
+        <section id="featured-recipe" class="py-16 px-6 md:px-12 bg-cream-white text-bold-charcoal">
+            <div class="container mx-auto max-w-4xl">
+                <h3 class="text-4xl font-bold text-center mb-12 text-zesty-orange">Featured Recipe: Slow-Cooked Moroccan Lamb Tagine with Apricots</h3>
+                <div class="bg-warm-spice-brown text-cream-white p-8 rounded-xl shadow-lg mb-8">
+                    <img src="p7.webp" alt="Featured Moroccan Lamb Tagine" class="w-full h-72 object-cover rounded-lg mb-6 shadow-md">
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Embark on an aromatic journey to North Africa with this exquisite Slow-Cooked Moroccan Lamb Tagine. This dish is a symphony of warm spices, tender lamb, and sweet apricots, designed to fill your home with an intoxicating fragrance that deepens with every hour of simmering. The unique conical lid of a tagine pot (or a heavy Dutch oven) ensures that every precious aromatic molecule is trapped and returned to the dish, resulting in unparalleled flavor and scent. This recipe is a testament to how patience and thoughtful layering of aromatics can create a truly unforgettable culinary experience.
+                    </p>
+                    <div class="flex items-center text-zesty-orange font-semibold text-2xl mb-4">
+                        Aroma Meter: <span class="ml-2 text-3xl">⭐⭐⭐⭐⭐</span> (Explosive, room-filling aroma!)
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mb-6">
+                        <div><span class="font-semibold">Prep Time:</span> 30 minutes</div>
+                        <div><span class="font-semibold">Cook Time:</span> 3 hours</div>
+                        <div><span class="font-semibold">Servings:</span> 6-8</div>
+                        <div><span class="font-semibold">Cuisine:</span> Moroccan</div>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Ingredients:</h4>
+                <div class="bg-cream-white p-8 rounded-xl shadow-lg mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-md">
+                        <div>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>2 lbs boneless lamb shoulder, cut into 1.5-inch cubes</li>
+                                <li>2 tbsp olive oil</li>
+                                <li>2 large onions, finely chopped</li>
+                                <li>4 cloves garlic, minced</li>
+                                <li>1 inch fresh ginger, grated</li>
+                                <li>1 tsp saffron threads, steeped in 1/4 cup hot water</li>
+                                <li>1 tsp ground cumin</li>
+                                <li>1 tsp ground coriander</li>
+                                <li>1/2 tsp ground turmeric</li>
+                                <li>1/2 tsp ground ginger</li>
+                                <li>1/4 tsp cayenne pepper (optional, for heat)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>1 cinnamon stick</li>
+                                <li>1 cup chicken or vegetable broth</li>
+                                <li>1 (14.5 oz) can diced tomatoes, undrained</li>
+                                <li>1/2 cup dried apricots, halved</li>
+                                <li>1/4 cup fresh cilantro, chopped (plus more for garnish)</li>
+                                <li>1/4 cup fresh parsley, chopped (plus more for garnish)</li>
+                                <li>Salt and freshly ground black pepper to taste</li>
+                                <li>Optional: 1/4 cup blanched almonds, toasted, for garnish</li>
+                                <li>Optional: Couscous or rice, for serving</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Instructions:</h4>
+                <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                    <ol class="list-decimal list-inside space-y-6 text-md leading-relaxed">
+                        <li><span class="font-semibold">Prepare the Lamb:</span> Pat the lamb cubes dry with paper towels. Season generously with salt and black pepper.
+                            <p class="text-sm italic mt-1 text-warm-spice-brown">Aroma Note: Seasoning the lamb now helps the surface caramelize, contributing to deeper savory aromas during searing.</p>
+                        </li>
+                        <li><span class="font-semibold">Sear the Lamb:</span> Heat olive oil in a large tagine or heavy Dutch oven over medium-high heat. Brown the lamb in batches on all sides, about 3-4 minutes per batch. Do not overcrowd the pan. Remove lamb and set aside.
+                            <p class="text-sm italic mt-1 text-warm-spice-brown">Aroma Note: Searing creates a rich, meaty aroma (Maillard reaction) that forms the foundation of the dish's fragrance.</p>
+                        </li>
+                        <li><span class="font-semibold">Sauté Aromatics:</span> Reduce heat to medium. Add chopped onions to the pot and sauté until softened and translucent, about 5-7 minutes. Add minced garlic and grated fresh ginger, cooking for another 1-2 minutes until fragrant.
+                            <p class="text-sm italic mt-1 text-warm-spice-brown">Aroma Note: The sweet, pungent aroma of sautéing onions, garlic, and ginger is the classic aromatic base for many global dishes.</p>
+                        </li>
+                        <li><span class="font-semibold">Bloom Spices:</span> Stir in ground cumin, ground coriander, ground turmeric, ground ginger, and cayenne pepper (if using). Cook for 1 minute, stirring constantly, until the spices are highly fragrant.
+                            <p class="text-sm italic mt-1 text-warm-spice-brown">Aroma Note: Blooming spices in hot oil awakens their volatile compounds, releasing their full, complex aromatic potential. This is a critical step for a truly fragrant tagine!</p>
+                        </li>
+                        <li><span class="font-semibold">Combine Ingredients:</span> Return the seared lamb to the pot. Add the saffron steeped in hot water, chicken or vegetable broth, diced tomatoes, cinnamon stick, and dried apricots. Stir well to combine.
+                            <p class="text-sm italic mt-1 text-warm-spice-brown">Aroma Note: As the liquids combine with the spices, the initial steam will carry the first hints of the tagine's evolving aroma.</p>
+                        </li>
+                        <li><span class="font-semibold">Simmer:</span> Bring the mixture to a gentle simmer. Cover the tagine or Dutch oven tightly, reduce heat to low, and simmer for at least 2.5 to 3 hours, or until the lamb is fork-tender. Stir occasionally to prevent sticking.
+                            <p class="text-sm italic mt-1 text-warm-spice-brown">Aroma Note: The long, slow simmer allows the aromatic compounds to meld and deepen, filling your entire home with a rich, layered fragrance that evolves over hours.</p>
+                        </li>
+                        <li><span class="font-semibold">Finish and Serve:</span> Once lamb is tender, remove the cinnamon stick. Stir in fresh cilantro and parsley. Taste and adjust seasoning with salt and pepper if needed. Serve hot over couscous or rice, garnished with additional fresh herbs and toasted almonds (if using).
+                            <p class="text-sm italic mt-1 text-warm-spice-brown">Aroma Note: The fresh herbs added at the end provide a bright, vibrant aromatic contrast to the deep, slow-cooked spices, completing the sensory profile.</p>
+                        </li>
+                    </ol>
+                </div>
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange mt-12">Tips for Maximizing Aroma in Your Tagine:</h4>
+                <ul class="list-disc list-inside space-y-2 text-md leading-relaxed bg-cream-white p-8 rounded-xl shadow-lg">
+                    <li><span class="font-semibold">Use Whole Spices:</span> Whenever possible, use whole spices (like cinnamon sticks, whole cumin/coriander seeds) and toast them yourself. Their aromatic oils are more potent and last longer than pre-ground spices.</li>
+                    <li><span class="font-semibold">Don't Skip Blooming:</span> The step of blooming ground spices in hot oil is crucial. It extracts fat-soluble aromatic compounds, intensifying their fragrance.</li>
+                    <li><span class="font-semibold">Fresh Ginger & Garlic:</span> Always use fresh ginger and garlic, grating or mincing them just before adding to maximize their pungent, fresh aromas.</li>
+                    <li><span class="font-semibold">Low and Slow:</span> The extended cooking time at a low temperature allows the volatile aromatic compounds to slowly release and meld, creating a more complex and pervasive fragrance.</li>
+                    <li><span class="font-semibold">Fresh Herb Garnish:</span> Adding fresh cilantro and parsley at the very end provides a burst of bright, herbaceous aroma that contrasts beautifully with the rich, cooked spices.</li>
+                    <li><span class="font-semibold">Serve Warm:</span> Aromas are more volatile and noticeable when food is warm. Serve your tagine hot to fully appreciate its fragrant bouquet.</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="flavor-school" class="py-16 px-6 md:px-12 bg-cream-white text-bold-charcoal">
+            <div class="container mx-auto max-w-6xl">
+                <h3 class="text-4xl font-bold text-center mb-12">Tasteroma Flavor School: Mastering Aromatic Cooking</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Welcome to the Tasteroma Flavor School, your comprehensive guide to understanding and harnessing the power of aroma in your cooking. Here, we demystify the science and art of fragrance, showing you how to transform ordinary meals into extraordinary sensory experiences. Aroma isn't just a pleasant byproduct; it's a fundamental component of taste, influencing our perception of flavor even more profoundly than our taste buds alone. In this school, you'll learn why certain spices smell the way they do, how cooking techniques can amplify or diminish their fragrance, and how to create harmonious aromatic profiles that elevate every dish you prepare.
+                </p>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Understanding the Science of Scent & Taste:</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Our perception of "flavor" is a complex interplay between taste (sweet, sour, salty, bitter, umami) and aroma (the hundreds of volatile compounds detected by our olfactory receptors). When you eat, these aromatic compounds travel up the back of your throat to your nasal cavity, creating what's known as "retronasal olfaction." This is why food tastes bland when you have a cold – your nose is blocked! The Flavor School delves into this fascinating connection, teaching you how to intentionally manipulate aromatic profiles for maximum culinary impact.
+                </p>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Spices, Herbs, and Aromatics: Unlocking Their Potential</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-warm-spice-brown text-cream-white p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">The World of Spices</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Spices are the backbone of aromatic cooking. We explore common and exotic spices, detailing their origins, primary aromatic compounds, and best uses. Learn about the warm, sweet notes of cinnamon and cloves, the earthy depth of cumin and coriander, the pungent kick of black pepper, and the vibrant zest of turmeric. We'll teach you how to select high-quality spices, store them properly to preserve their volatile oils, and identify when they've lost their potency.
+                        </p>
+                        <ul class="list-disc list-inside text-sm mb-4">
+                            <li><span class="font-semibold">Cumin:</span> Earthy, warm, nutty. Best toasted.</li>
+                            <li><span class="font-semibold">Coriander:</span> Citrusy, floral, slightly sweet. Use seeds or fresh leaves.</li>
+                            <li><span class="font-semibold">Cardamom:</span> Pungent, aromatic, citrusy, floral. Essential in many desserts and curries.</li>
+                            <li><span class="font-semibold">Fenugreek:</span> Bitter, nutty, maple-like. Often used in Indian cuisine.</li>
+                            <li><span class="font-semibold">Star Anise:</span> Licorice-like, warm, sweet. Great for broths and braises.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-fresh-herb-green text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">The Power of Fresh Herbs</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Fresh herbs add a bright, vibrant aromatic dimension. Discover the refreshing notes of mint, the peppery zest of basil, the piney undertones of rosemary, and the delicate earthiness of thyme. We cover how to properly wash, chop, and store fresh herbs, as well as when to add them to your cooking to maximize their volatile oils – often at the end for fresh bursts of flavor.
+                        </p>
+                        <ul class="list-disc list-inside text-sm mb-4">
+                            <li><span class="font-semibold">Basil:</span> Sweet, peppery, slightly minty. Ideal for pestos and fresh salads.</li>
+                            <li><span class="font-semibold">Cilantro:</span> Citrusy, fresh, sometimes soapy (for some!). Key in Mexican and Asian dishes.</li>
+                            <li><span class="font-semibold">Rosemary:</span> Piney, woody, pungent. Great with roasted meats and vegetables.</li>
+                            <li><span class="font-semibold">Mint:</span> Cool, refreshing, sweet. Perfect for desserts, drinks, and some savory dishes.</li>
+                            <li><span class="font-semibold">Dill:</span> Grassy, slightly anise-like. Excellent with fish and potatoes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Cooking Techniques That Boost Fragrance:</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    The way you cook your ingredients profoundly impacts their aromatic release. Our Flavor School highlights key techniques:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-cream-white p-6 rounded-xl shadow-md border border-warm-spice-brown">
+                        <h5 class="text-xl font-bold mb-2">Toasting Whole Spices</h5>
+                        <p class="text-md leading-relaxed">
+                            Dry roasting whole spices in a hot pan before grinding them is a game-changer. This process awakens their dormant aromatic compounds, intensifying their flavor and fragrance. Learn how to toast spices like cumin, coriander, and cardamom to perfection, releasing their full, complex bouquet. This simple step can elevate a dish from good to extraordinary.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-6 rounded-xl shadow-md border border-warm-spice-brown">
+                        <h5 class="text-xl font-bold mb-2">Blooming Spices in Oil (Tempering)</h5>
+                        <p class="text-md leading-relaxed">
+                            This technique, common in Indian cuisine, involves briefly frying ground or whole spices in hot oil or ghee. The fat acts as a carrier, absorbing and distributing the aromatic compounds throughout the dish. This method is excellent for releasing fat-soluble flavors and creating a fragrant base for curries, dals, and stews.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-6 rounded-xl shadow-md border border-warm-spice-brown">
+                        <h5 class="text-xl font-bold mb-2">Mirepoix & Soffritto: Building Aromatic Foundations</h5>
+                        <p class="text-md leading-relaxed">
+                            The classic aromatic bases of French (mirepoix: onion, carrot, celery) and Italian (soffritto: onion, garlic, carrot, celery, sometimes pancetta) cuisines are foundational. Slowly sautéing these vegetables allows their natural sugars to caramelize and their aromatic compounds to release, creating a sweet, savory, and deeply fragrant base for countless dishes.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-6 rounded-xl shadow-md border border-warm-spice-brown">
+                        <h5 class="text-xl font-bold mb-2">Infusion Techniques</h5>
+                        <p class="text-md leading-relaxed">
+                            Infusing liquids (oils, broths, creams) with aromatics like garlic, ginger, chilies, or herbs is a powerful way to impart flavor and scent. Learn how to gently heat these ingredients in a liquid to extract their essence, creating fragrant oils for drizzling or aromatic bases for soups and sauces.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-6 rounded-xl shadow-md border border-warm-spice-brown">
+                        <h5 class="text-xl font-bold mb-2">Zesting & Grating</h5>
+                        <p class="text-md leading-relaxed">
+                            For citrus fruits, the zest contains potent aromatic oils. Grating garlic or ginger releases more of their pungent compounds than chopping. Learn how to properly zest citrus and finely grate aromatics to maximize their immediate aromatic impact in fresh salads, marinades, and finishes.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-6 rounded-xl shadow-md border border-warm-spice-brown">
+                        <h5 class="text-xl font-bold mb-2">Smoking & Charring</h5>
+                        <p class="text-md leading-relaxed">
+                            Introducing smoky notes through grilling, charring vegetables, or using smoked spices (like smoked paprika) adds a unique, complex aromatic layer. This technique transforms ingredients, giving them a depth of flavor and a captivating scent that's hard to achieve otherwise.
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Step-by-Step Guides for Beginners:</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-fresh-herb-green text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">DIY Aromatic Spice Blend: Garam Masala</h5>
+                        <ol class="list-decimal list-inside text-md leading-relaxed">
+                            <li class="mb-2"><span class="font-semibold">Ingredients:</span> 2 tbsp coriander seeds, 1 tbsp cumin seeds, 1 tbsp black peppercorns, 1 tsp green cardamom pods, 1/2 tsp cloves, 1 small piece cinnamon stick, 1 bay leaf.</li>
+                            <li class="mb-2"><span class="font-semibold">Step 1 (Toasting):</span> In a dry pan over medium-low heat, add all whole spices. Toast, stirring frequently, for 3-5 minutes until fragrant and slightly darkened. Be careful not to burn them.</li>
+                            <li class="mb-2"><span class="font-semibold">Step 2 (Cooling):</span> Transfer the toasted spices to a plate and let them cool completely. This prevents them from "sweating" and clumping when ground.</li>
+                            <li class="mb-2"><span class="font-semibold">Step 3 (Grinding):</span> Once cool, transfer the spices to a spice grinder or a clean coffee grinder. Grind into a fine powder.</li>
+                            <li class="mb-2"><span class="font-semibold">Step 4 (Storage):</span> Store your freshly made garam masala in an airtight container in a cool, dark place for up to 3 months. Its aroma will be far superior to store-bought versions!</li>
+                        </ol>
+                    </div>
+                    <div class="bg-zesty-orange text-cream-white p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Infusing Aromatic Oils: Garlic & Chili Oil</h5>
+                        <ol class="list-decimal list-inside text-md leading-relaxed">
+                            <li class="mb-2"><span class="font-semibold">Ingredients:</span> 1 cup neutral oil (canola, grapeseed), 6-8 cloves garlic (sliced), 2-3 dried red chilies (or 1 tbsp chili flakes).</li>
+                            <li class="mb-2"><span class="font-semibold">Step 1 (Combine):</span> In a small saucepan, combine the oil, sliced garlic, and chilies.</li>
+                            <li class="mb-2"><span class="font-semibold">Step 2 (Gentle Heat):</span> Heat over very low heat. The goal is to gently infuse, not fry. You should see tiny bubbles around the garlic, but it shouldn't sizzle vigorously.</li>
+                            <li class="mb-2"><span class="font-semibold">Step 3 (Infuse):</span> Continue heating for 15-20 minutes, or until the garlic is lightly golden and fragrant. Remove from heat.</li>
+                            <li class="mb-2"><span class="font-semibold">Step 4 (Cool & Strain):</span> Let the oil cool completely in the pan. Once cool, strain out the garlic and chilies (you can save the crispy garlic for garnish!).</li>
+                            <li class="mb-2"><span class="font-semibold">Step 5 (Storage):</span> Store the infused oil in a clean, airtight bottle in the refrigerator for up to 2 weeks. Use it for drizzling over pasta, salads, or roasted vegetables.</li>
+                        </ol>
+                    </div>
+                </div>
+                <p class="text-lg mt-12 leading-relaxed">
+                    The Tasteroma Flavor School is continuously updated with new lessons, videos, and interactive exercises. Our goal is to empower you with the knowledge and confidence to experiment with aromas, create your own signature blends, and truly cook with your senses. Join us on this fragrant educational journey and unlock a new dimension of culinary delight!
+                </p>
+            </div>
+        </section>
+
+        <section id="community" class="py-16 px-6 md:px-12 bg-warm-spice-brown text-cream-white">
+            <div class="container mx-auto max-w-6xl text-center">
+                <h3 class="text-4xl font-bold mb-12">Tasteroma Community Creations: Share Your Aromatic Journey</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    At Tasteroma, we believe that cooking is a shared experience, and the joy of aroma is amplified when shared with others. Our Community Creations section is a vibrant hub where home cooks, food lovers, and adventurous eaters from around the globe connect, inspire, and celebrate the art of aromatic cooking. This is your space to showcase your culinary triumphs, share your unique aromatic discoveries, and draw inspiration from a diverse community of fellow enthusiasts. We foster a supportive and engaging environment where every fragrant dish tells a story.
+                </p>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">What’s Cooking in Your Kitchen? Gallery</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Our "What’s Cooking in Your Kitchen?" gallery is a visual feast of user-shared photos, each accompanied by tips, tricks, and personal anecdotes about the aromatic journey of their dish. From steaming curries to freshly baked bread, every photo tells a story of passion and flavor.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-cream-white text-bold-charcoal p-6 rounded-xl shadow-lg">
+                        <img src="p8.avif" alt="User Dish 1" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                        <h5 class="text-xl font-bold mb-2">Spiced Pumpkin Soup with Crispy Sage</h5>
+                        <p class="text-md mb-3">"The aroma of roasted pumpkin with cinnamon and nutmeg filled my entire apartment! A perfect autumn evening meal." - <span class="font-semibold">AromaChef_22</span></p>
+                        <button class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</button>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-6 rounded-xl shadow-lg">
+                        <img src="p9.webp" alt="User Dish 2" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                        <h5 class="text-xl font-bold mb-2">Lemongrass & Ginger Stir-fry</h5>
+                        <p class="text-md mb-3">"The fresh lemongrass and ginger aroma was so invigorating! Quick and fragrant weeknight dinner." - <span class="font-semibold">GlobalPalate</span></p>
+                        <button class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</button>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-6 rounded-xl shadow-lg">
+                        <img src="p10.avif" alt="User Dish 3" class="w-full h-48 object-cover rounded-lg mb-4 shadow-md">
+                        <h5 class="text-xl font-bold mb-2">Slow-Cooked Lamb Tagine with Apricots</h5>
+                        <p class="text-md mb-3">"My kitchen smelled like a Moroccan bazaar all day! The slow cooking really deepened the saffron and cinnamon notes." - <span class="font-semibold">SpiceExplorer</span></p>
+                        <button class="bg-zesty-orange text-cream-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition duration-300">View Recipe</button>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Monthly Challenges: "Aroma of the Month" Recipe Contest</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Ignite your creativity with our exciting "Aroma of the Month" recipe contest! Each month, we announce a specific spice, herb, or aromatic theme, challenging our community to create and share their most fragrant dishes incorporating it. This is a fantastic opportunity to experiment, learn new techniques, and push your aromatic boundaries.
+                </p>
+                <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg mb-12">
+                    <h5 class="text-2xl font-bold mb-4">Current Challenge: The Enchanting Aroma of Cardamom!</h5>
+                    <p class="text-md mb-4 leading-relaxed">
+                        This month, we're celebrating the versatile and captivating aroma of Cardamom. Whether it's green or black, whole or ground, we want to see how you infuse its unique citrusy, floral, and slightly spicy notes into your dishes. From Indian curries and Swedish pastries to aromatic coffees and innovative desserts, let your creativity flow!
+                    </p>
+                    <p class="text-md font-semibold mb-4">How to Participate:</p>
+                    <ul class="list-disc list-inside text-md text-left mx-auto max-w-xl mb-6">
+                        <li>Create a recipe featuring Cardamom as a key aromatic element.</li>
+                        <li>Take beautiful photos of your dish, highlighting its aromatic appeal.</li>
+                        <li>Submit your recipe and photos through our community portal by [Date].</li>
+                        <li>Share your creation on social media using #TasteromaCardamomChallenge!</li>
+                    </ul>
+                    <p class="text-md font-semibold mb-4">Prizes:</p>
+                    <ul class="list-disc list-inside text-md text-left mx-auto max-w-xl">
+                        <li>Featured spot on the Tasteroma homepage and social media.</li>
+                        <li>Exclusive Tasteroma spice kit.</li>
+                        <li>A virtual cooking session with a renowned aromatic chef.</li>
+                    </ul>
+                    <button class="bg-zesty-orange text-cream-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition duration-300 mt-6">Submit Your Entry!</button>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Connect & Share:</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    The Tasteroma community is more than just a gallery; it's a place for genuine connection. Engage with other members, ask questions, share your cooking tips, and provide feedback on recipes. Our forums and comment sections are moderated to ensure a positive and inspiring environment for everyone passionate about food and its incredible aromas.
+                </p>
+                <button class="bg-fresh-herb-green text-bold-charcoal font-bold py-3 px-6 rounded-full shadow-lg hover:bg-green-600 transition duration-300">Join the Tasteroma Community</button>
+            </div>
+        </section>
+
+        <section id="scent-spice-stories" class="py-16 px-6 md:px-12 bg-cream-white text-bold-charcoal">
+            <div class="container mx-auto max-w-6xl">
+                <h3 class="text-4xl font-bold text-center mb-12">Scent & Spice Stories: The Soul of Aromatic Cuisine</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Every spice has a story, and every aroma carries a history. In our "Scent & Spice Stories" section, we delve deep into the fascinating world of culinary aromatics, exploring their origins, cultural significance, and the incredible journeys they've undertaken to reach our kitchens. This is where history meets gastronomy, and where you'll discover the rich tapestry of traditions that make aromatic cooking so captivating. From ancient trade routes to modern culinary innovations, we uncover the narratives that infuse our food with meaning and magnificent fragrance.
+                </p>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Global Spice Origins and Cooking Culture:</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-warm-spice-brown text-cream-white p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">The Silk Road of Scents: A Journey Through History</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Trace the ancient paths of trade that brought exotic spices from the East to the West. Learn how black pepper, cinnamon, and cloves were once as valuable as gold, shaping empires and inspiring voyages of discovery. We explore the historical significance of these spices in various cultures, from their use in ancient rituals and medicines to their pivotal role in defining national cuisines. Understand how the availability of certain spices influenced cooking methods and flavor profiles across continents, creating distinct aromatic signatures that persist today.
+                        </p>
+                        <p class="text-sm italic">"The scent of cinnamon once guided merchants across deserts, now it guides our hands in the kitchen."</p>
+                    </div>
+                    <div class="bg-fresh-herb-green text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Cultural Aromatic Signatures: Beyond the Recipe</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Every culture has its signature aromatic profile. Discover why certain spices are inextricably linked to specific regions – the pungent garlic and chili of Thai cuisine, the earthy saffron and cumin of Moroccan dishes, or the fresh ginger and soy of Japanese cooking. We explore the cultural context of these aromatic pairings, understanding how they reflect local ingredients, historical influences, and culinary philosophies. This section provides a deeper appreciation for the nuanced role of aroma in global gastronomy, moving beyond mere ingredients to the very soul of a cuisine.
+                        </p>
+                        <p class="text-sm italic">"A single whiff can transport you to a bustling market in Marrakech or a quiet village in Tuscany."</p>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">Behind-the-Scenes: From Chefs to Home Cooks</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg border border-warm-spice-brown">
+                        <h5 class="text-2xl font-bold mb-3">Interviews with Aromatic Maestros: Chef Antoine Dubois</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            "For Chef Antoine Dubois, a Michelin-starred culinary artist renowned for his innovative use of botanicals, aroma is the 'invisible ingredient' that defines a dish. 'You eat with your nose first,' he often says. In this exclusive interview, Chef Dubois shares his philosophy on layering scents, from the delicate perfume of fresh herbs to the smoky depth of charred vegetables. He reveals his secret techniques for extracting maximum fragrance from ingredients, whether it's blooming saffron threads in warm milk for a dessert or gently toasting whole spices for a complex sauce. He emphasizes the importance of understanding the volatile compounds in each ingredient and how heat, time, and fat can unlock their full aromatic potential. His latest signature dish, 'Forest Floor Symphony,' features an edible mist infused with pine and truffle, demonstrating his commitment to a truly immersive, multisensory dining experience."
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg border border-warm-spice-brown">
+                        <h5 class="text-2xl font-bold mb-3">Home Cook Spotlight: Maria's Grandmother's Secret Spice Box</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            "Maria grew up in a small village in Southern Italy, where her Nonna's kitchen was always filled with the comforting aroma of simmering sauces and baking bread. Her grandmother's most prized possession was a worn wooden box, filled with an array of dried herbs and spices, many hand-picked from the local hillsides. 'Nonna taught me that the best food isn't just about taste; it's about the feeling it evokes, and that starts with the smell,' Maria recounts. She shares how her Nonna would rub fresh rosemary and garlic into roasted potatoes, creating an intoxicating fragrance that signaled Sunday lunch. Or how a pinch of dried oregano, crumbled between her palms just before adding to a tomato sauce, would release an explosion of Mediterranean scent. Maria continues this tradition, using her own 'aroma box' to infuse every meal with the love and heritage passed down through generations, proving that the most profound aromatic experiences often come from the simplest, most heartfelt cooking."
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-zesty-orange">DIY Spice Blend Tutorials: Crafting Your Signature Scents</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Elevate your cooking by crafting your own unique spice blends. Our tutorials provide step-by-step instructions for creating aromatic masterpieces that will become staples in your kitchen.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-warm-spice-brown text-cream-white p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Ras el Hanout: The Head of the Shop Blend</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            A complex Moroccan blend, often containing dozens of spices. Our simplified version focuses on key aromatics like turmeric, ginger, cardamom, and rose petals, creating a warm, floral, and slightly sweet profile perfect for tagines, couscous, and roasted vegetables. Learn to toast and grind these spices to perfection, achieving a blend that truly lives up to its name.
+                        </p>
+                    </div>
+                    <div class="bg-fresh-herb-green text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Herbes de Provence: The Scent of the Mediterranean</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Capture the essence of the South of France with this fragrant blend of dried herbs like thyme, rosemary, savory, and oregano. Perfect for roasted chicken, grilled fish, and vegetable dishes, this blend evokes the sunny landscapes and aromatic gardens of Provence. We'll show you how to combine these herbs for optimal aromatic balance and how to "wake them up" before use.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-lg mt-12 leading-relaxed">
+                    Through "Scent & Spice Stories," Tasteroma aims to deepen your appreciation for the ingredients you cook with and the cultures they come from. Understanding the narrative behind each aroma enriches your cooking experience, making every meal a journey through time and tradition.
+                </p>
+            </div>
+        </section>
+
+        <section id="shop-the-aroma" class="py-16 px-6 md:px-12 bg-zesty-orange text-cream-white">
+            <div class="container mx-auto max-w-6xl text-center">
+                <h3 class="text-4xl font-bold mb-12">Shop the Aroma: Elevate Your Culinary Experience</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    At Tasteroma, we believe that having the right tools and the finest ingredients is crucial to unlocking the full aromatic potential of your cooking. Our "Shop the Aroma" section is a carefully curated marketplace featuring premium spice kits, specialized cooking tools, and exclusive e-books, all designed to enhance your sensory culinary journey. We've hand-picked products that align with our philosophy of aroma-driven cooking, ensuring quality and effectiveness.
+                </p>
+
+                <h4 class="text-3xl font-semibold mb-6 text-cream-white">Curated Spice Kits: Your Aromatic Arsenal</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Discover our exclusive spice kits, thoughtfully assembled to bring specific aromatic profiles and global cuisines directly to your kitchen. Each kit contains freshly sourced, high-quality spices, often whole, to ensure maximum fragrance and longevity.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">The Indian Aromatic Essentials Kit</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Unlock the complex and vibrant aromas of Indian cuisine. This kit includes whole cumin, coriander, green cardamom, black peppercorns, cinnamon sticks, and dried red chilies. Perfect for mastering aromatic tempering and creating authentic curries, dals, and biryanis. Comes with a guide on how to toast and grind each spice for optimal fragrance.
+                        </p>
+                        <span class="text-xl font-bold text-zesty-orange">$49.99</span>
+                        <button class="bg-zesty-orange text-cream-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-orange-600 transition duration-300 mt-4">Add to Cart</button>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Mediterranean Herb Garden Kit</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Infuse your dishes with the fresh, herbaceous aromas of the Mediterranean. This kit features premium dried oregano, thyme, rosemary, marjoram, and a special blend of Herbes de Provence. Ideal for roasted vegetables, grilled meats, and flavorful sauces. Includes tips on how to rehydrate and bloom dried herbs for maximum aromatic release.
+                        </p>
+                        <span class="text-xl font-bold text-zesty-orange">$39.99</span>
+                        <button class="bg-zesty-orange text-cream-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-orange-600 transition duration-300 mt-4">Add to Cart</button>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Sweet & Aromatic Baking Spice Kit</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Elevate your desserts with intoxicating sweet aromas. This kit contains Ceylon cinnamon sticks, whole nutmeg, green cardamom pods, star anise, and pure vanilla beans. Perfect for pies, cakes, custards, and warm beverages. Learn how to freshly grate nutmeg and infuse vanilla for unparalleled fragrance.
+                        </p>
+                        <span class="text-xl font-bold text-zesty-orange">$44.99</span>
+                        <button class="bg-zesty-orange text-cream-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-orange-600 transition duration-300 mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-cream-white">Cooking Tools for Aroma-Enhancing Techniques:</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    The right tools can make all the difference in unlocking and preserving the delicate aromatic compounds in your ingredients.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Authentic Moroccan Tagine Pot</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            This traditional earthenware pot with its conical lid is designed to trap steam and return moisture to the dish, creating incredibly tender meat and vegetables, and, crucially, concentrating all the aromatic flavors within. Perfect for slow-cooked stews that fill your home with rich, layered scents.
+                        </p>
+                        <span class="text-xl font-bold text-zesty-orange">$79.99</span>
+                        <button class="bg-zesty-orange text-cream-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-orange-600 transition duration-300 mt-4">Add to Cart</button>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Professional Spice Toaster/Grinder Set</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            A dedicated tool for dry roasting whole spices and then grinding them to a fine, fragrant powder. This set ensures even toasting and efficient grinding, preserving the volatile oils that give spices their potent aroma. Essential for anyone serious about elevating their spice game.
+                        </p>
+                        <span class="text-xl font-bold text-zesty-orange">$59.99</span>
+                        <button class="bg-zesty-orange text-cream-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-orange-600 transition duration-300 mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl font-semibold mb-6 text-cream-white mt-12">E-books with Aroma-Rich Recipes:</h4>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Expand your culinary repertoire with our exclusive e-books, packed with unique, aroma-focused recipes and expert tips.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">The Art of Aromatic Infusions: Oils, Vinegars & Syrups</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Learn to create your own infused oils, vinegars, and simple syrups using fresh herbs, spices, and fruits. This e-book provides detailed recipes and techniques for capturing and preserving delicate aromas, perfect for finishing dishes, crafting cocktails, or gifting.
+                        </p>
+                        <span class="text-xl font-bold text-zesty-orange">$19.99</span>
+                        <button class="bg-zesty-orange text-cream-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-orange-600 transition duration-300 mt-4">Purchase E-book</button>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h5 class="text-2xl font-bold mb-3">Global Street Food: Aromatic Adventures at Home</h5>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Recreate the tantalizing aromas of the world's most beloved street foods. From Thai satay with its smoky peanut fragrance to Mexican elotes with their charred corn and chili scent, this e-book brings the vibrant street market experience to your kitchen.
+                        </p>
+                        <span class="text-xl font-bold text-zesty-orange">$19.99</span>
+                        <button class="bg-zesty-orange text-cream-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-orange-600 transition duration-300 mt-4">Purchase E-book</button>
+                    </div>
+                </div>
+                <p class="text-lg mt-12 leading-relaxed">
+                    "Shop the Aroma" is your trusted source for premium products that will truly make a difference in your aromatic cooking journey. We are committed to providing tools and ingredients that empower you to create dishes that not only taste incredible but also fill your home with unforgettable fragrances.
+                </p>
+            </div>
+        </section>
+
+        <!-- Interactive Features -->
+        <section class="py-16 px-6 md:px-12 bg-cream-white text-bold-charcoal">
+            <div class="container mx-auto max-w-6xl text-center">
+                <h3 class="text-4xl font-bold mb-12">Interactive Features: Enhancing Your Aromatic Journey</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Tasteroma is designed to be more than just a static recipe website; it's an interactive platform that actively engages your senses and empowers your culinary exploration. Our unique features are crafted to make your journey into aroma-driven cooking intuitive, personalized, and truly enjoyable. We leverage innovative tools to help you discover, track, and master the art of fragrance in your kitchen.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-warm-spice-brown text-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Aroma Meter: Visual Fragrance Indicator</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Our proprietary Aroma Meter provides a quick, visual indication of how fragrant a recipe will be. From a gentle whisper of scent to a room-filling symphony, this meter helps you choose dishes based on your desired aromatic impact. It’s an intuitive way to understand the 'smell first' potential of each recipe, making it easier to plan your meals and set the mood in your kitchen.
+                        </p>
+                        <div class="flex justify-center items-center text-zesty-orange font-semibold text-4xl">
+                            👃👃👃
+                        </div>
+                    </div>
+                    <div class="bg-fresh-herb-green text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Beginner Tips Pop-Ups: Instant Aroma Hacks</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            New to aromatic cooking? No problem! As you browse recipes, helpful "Beginner Tips" pop-ups will appear, offering simple, actionable hacks for boosting aroma in everyday meals. These contextual tips provide guidance on things like toasting spices, blooming aromatics, or finishing dishes with fresh herbs, ensuring you always have expert advice at your fingertips.
+                        </p>
+                        <span class="text-5xl">💡</span>
+                    </div>
+                    <div class="bg-zesty-orange text-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Personal Aroma Profile: Track Your Scent Journey</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Create your own Personal Aroma Profile to track your favorite recipes by spice level, scent intensity, and cuisine type. This feature helps you discover patterns in your preferences, suggests new recipes based on your past aromatic adventures, and allows you to curate your own collection of highly fragrant dishes.
+                        </p>
+                        <span class="text-5xl">👤</span>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">“Smell First” Filters: Search by Desired Aroma</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Our innovative "Smell First" filters allow you to search for dishes based on desired aroma profiles (mild, bold, spicy, earthy, floral, citrusy, smoky, sweet, etc.). This revolutionary search functionality puts aroma at the forefront of your recipe discovery, letting your nose guide your culinary choices.
+                        </p>
+                        <span class="text-5xl">🔍</span>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Interactive Ingredient Spotlights</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Click on key aromatic ingredients within a recipe to reveal detailed spotlights. These pop-ups provide information on the ingredient's origin, its primary aromatic compounds, best practices for preparation to maximize scent, and suggested pairings. It's like having a miniature flavor school integrated directly into every recipe.
+                        </p>
+                        <span class="text-5xl">🌿</span>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Aroma Pairing Suggestions</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            For each recipe, Tasteroma suggests complementary aromatic pairings – whether it's a specific wine, a fresh herb garnish, or even a recommended background scent (like diffusing essential oils) to enhance the overall sensory experience of your meal. Elevate your dining beyond the plate!
+                        </p>
+                        <span class="text-5xl">🥂</span>
+                    </div>
+                </div>
+                <p class="text-lg mt-12 leading-relaxed">
+                    These interactive features are designed to make your Tasteroma experience seamless, engaging, and deeply enriching. We are constantly innovating to bring you new ways to connect with your food through the incredible power of aroma.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mobile Experience -->
+        <section class="py-16 px-6 md:px-12 bg-warm-spice-brown text-cream-white">
+            <div class="container mx-auto max-w-6xl text-center">
+                <h3 class="text-4xl font-bold mb-12">Seamless Mobile Experience: Aroma On-The-Go</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Tasteroma is designed with a mobile-first approach, ensuring that your aromatic culinary journey is just as rich and intuitive on your smartphone or tablet as it is on a desktop. We understand that modern cooking often happens on the go, whether you're at the grocery store, in a friend's kitchen, or simply prefer the convenience of your mobile device. Our mobile experience is optimized for quick access, easy navigation, and sensory engagement, bringing the world of aroma-driven cooking right to your fingertips.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Quick-Glance Aroma Indicators on Recipes</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            On mobile, our "Smell First" aroma indicators are prominently displayed at the top of each recipe card and page, allowing for quick assessment of aromatic intensity without needing to scroll. This rapid visual cue helps you make informed choices even when you're in a hurry, ensuring every dish aligns with your aromatic preferences.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Short Video Clips: Visualizing Aroma Techniques</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Experience cooking techniques with dynamic short video clips, specifically highlighting moments of steam, sizzle, and aroma release. These bite-sized visuals demonstrate crucial steps like blooming spices or sautéing aromatics, making complex techniques easy to grasp even on a smaller screen. See the fragrance come to life!
+                        </p>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Save Favorites & Share Progress</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Easily save your favorite aroma-rich recipes for quick access later. Our mobile interface also allows you to seamlessly share your cooking progress, photos, and aromatic discoveries with the Tasteroma community directly from your phone, fostering real-time engagement and inspiration.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white text-bold-charcoal p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3">Notifications for New & Seasonal Recipes</h4>
+                        <p class="text-md mb-4 leading-relaxed">
+                            Stay updated with personalized notifications for new bold or seasonal recipes that match your aroma profile. Never miss out on a captivating new fragrance to explore, ensuring your culinary journey remains fresh and exciting.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-lg mt-12 leading-relaxed">
+                    The Tasteroma mobile experience is designed to be your indispensable kitchen companion, bringing the world of aromatic cooking to your pocket. From quick recipe lookups at the market to step-by-step guidance during cooking, we ensure that the power of aroma is always within reach.
+                </p>
+            </div>
+        </section>
+
+        <!-- Why Tasteroma is Unique -->
+        <section class="py-16 px-6 md:px-12 bg-fresh-herb-green text-bold-charcoal">
+            <div class="container mx-auto max-w-6xl text-center">
+                <h3 class="text-4xl font-bold mb-12">Why Tasteroma Is Unique: Our Distinctive Edge</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    In a crowded culinary landscape, Tasteroma stands out as a pioneering platform dedicated to a holistic sensory cooking experience. Our unique approach goes beyond mere ingredients and instructions, focusing on the often-overlooked yet profoundly impactful element of aroma. We're not just about recipes; we're about transforming your kitchen into a fragrant sanctuary and your meals into unforgettable sensory journeys. Here’s what makes Tasteroma truly one-of-a-kind:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3 text-zesty-orange">Focus on Both Taste AND Aroma</h4>
+                        <p class="text-md leading-relaxed">
+                            While most platforms prioritize taste, Tasteroma equally emphasizes aroma, recognizing it as the critical first impression and an integral part of flavor perception. We guide you to cook with all your senses, ensuring your dishes don't just satisfy the palate but also captivate the nose, creating a truly full sensory experience from preparation to enjoyment. This dual focus is at the core of every recipe and feature on our platform.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3 text-zesty-orange">Global Recipes Curated by Aromatic Appeal</h4>
+                        <p class="text-md leading-relaxed">
+                            Our extensive library of global recipes isn't just categorized by cuisine; it's meticulously curated by spice, boldness, and aromatic appeal. Our "Smell First" indicators and aroma filters allow you to discover dishes based on the fragrance you desire, making your culinary exploration more intuitive and aligned with your sensory preferences.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3 text-zesty-orange">Engaging for All Skill Levels</h4>
+                        <p class="text-md leading-relaxed">
+                            Whether you're a beginner taking your first steps in the kitchen or an adventurous cook seeking new challenges, Tasteroma offers a fun and engaging learning environment. Our Flavor School, beginner tips, and community features provide support and inspiration for everyone to master the art of aromatic cooking, making complex techniques approachable.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3 text-zesty-orange">Modern Design with Sensory-Driven Visuals</h4>
+                        <p class="text-md leading-relaxed">
+                            Our platform boasts a modern, clean design that is visually appealing and highly functional. Imagery is specifically chosen to evoke sensory experiences, with close-ups of steaming dishes and vibrant spices, reinforcing our commitment to aroma-driven content and enhancing your browsing experience.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg col-span-1 md:col-span-2">
+                        <h4 class="text-2xl font-bold mb-3 text-zesty-orange">Community-Driven Platform</h4>
+                        <p class="text-md leading-relaxed">
+                            Tasteroma fosters a vibrant, supportive community where users can share their aromatic creations, exchange tips, and participate in exciting challenges like "Aroma of the Month." This collaborative environment enriches the cooking journey, turning it into a shared adventure of discovery and inspiration. Your kitchen becomes part of a global aromatic network.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-lg mt-12 leading-relaxed">
+                    By combining innovative features, a unique sensory focus, and a passionate community, Tasteroma redefines the online recipe experience. We invite you to join us and discover a new dimension of culinary delight, where every meal is a celebration of taste and an ode to aroma.
+                </p>
+            </div>
+        </section>
+
+        <!-- Disclaimer Section -->
+        <section class="py-16 px-6 md:px-12 bg-bold-charcoal text-white">
+            <div class="container mx-auto max-w-6xl">
+                <h3 class="text-4xl font-bold text-center mb-12">Disclaimer for Tasteroma.com</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Welcome to Tasteroma.com. Please read this disclaimer carefully before using our website. By accessing or using Tasteroma.com, you acknowledge and agree to be bound by the terms and conditions outlined in this disclaimer. If you do not agree with any part of this disclaimer, you must not use our website.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">1. General Information Only:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    All content provided on Tasteroma.com, including recipes, cooking tips, articles, and other information, is intended for general informational and educational purposes only. While we strive to provide accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">2. Not Professional Advice:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    The content on Tasteroma.com is not intended to be a substitute for professional medical, dietary, or nutritional advice, diagnosis, or treatment. Always seek the advice of your physician, registered dietitian, or other qualified health provider with any questions you may have regarding a medical condition or dietary needs. Never disregard professional medical advice or delay in seeking it because of something you have read on this website.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">3. Allergy and Dietary Restrictions:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    Recipes on Tasteroma.com may contain common allergens such as nuts, dairy, gluten, soy, eggs, seafood, etc. While we may occasionally provide notes on potential allergens or dietary modifications, it is solely your responsibility to be aware of your own allergies and dietary restrictions and to verify the ingredients of any recipe before consumption. Tasteroma.com cannot be held responsible for any adverse reactions to food consumed as a result of following recipes or information from this website. Always exercise caution and consult with a healthcare professional if you have any concerns.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">4. Kitchen Safety:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    Cooking involves inherent risks, including but not limited to cuts, burns, and other injuries. When following any recipe or cooking tip from Tasteroma.com, you assume full responsibility for proper kitchen safety practices, including the safe handling of knives, hot surfaces, and electrical appliances. Adult supervision is recommended for children in the kitchen. Tasteroma.com is not responsible for any accidents, injuries, or damages that may occur while preparing recipes or using information from this website.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">5. External Links:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    Tasteroma.com may contain links to external websites that are not provided or maintained by or in any way affiliated with Tasteroma. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them. We have no control over the nature, content, and availability of those sites. The use of any linked website is at your own risk.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">6. User-Generated Content:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    Our "Community Creations" section and other interactive features allow users to share their own recipes, photos, and tips. Tasteroma.com does not endorse or verify the accuracy or safety of user-generated content. Any reliance on user-generated content is at your own discretion and risk. We reserve the right to remove any content deemed inappropriate or harmful without prior notice.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">7. Intellectual Property:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    All original content on Tasteroma.com, including text, graphics, logos, images, and software, is the property of Tasteroma or its content creators and is protected by intellectual property laws. You may not reproduce, distribute, modify, display, perform, publish, license, create derivative works from, transfer, or sell any content obtained from Tasteroma.com without explicit written permission.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">8. Availability and Errors:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    While we endeavor to keep the website up and running smoothly, Tasteroma.com takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control. We also do not warrant that the website will be free of errors or viruses, and we recommend that you use up-to-date virus-checking software.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">9. Changes to Disclaimer:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    Tasteroma.com reserves the right to amend this disclaimer at any time without prior notice. By continuing to use the website after any such changes, you accept and agree to the modified disclaimer. It is your responsibility to review this disclaimer periodically for updates.
+                </p>
+
+                <h4 class="text-2xl font-semibold mb-4 text-zesty-orange">10. Limitation of Liability:</h4>
+                <p class="text-md mb-4 leading-relaxed">
+                    In no event will Tasteroma.com, its owners, employees, or affiliates be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website. Your use of the website is at your sole risk.
+                </p>
+                <p class="text-lg mt-8 leading-relaxed text-center">
+                    By using Tasteroma.com, you signify your acceptance of this disclaimer. If you have any questions about this disclaimer, please contact us.
+                </p>
+            </div>
+        </section>
+
+        <!-- Customer Satisfaction -->
+        <section class="py-16 px-6 md:px-12 bg-fresh-herb-green text-bold-charcoal">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h3 class="text-4xl font-bold mb-8">Customer Satisfaction: Our Promise to You</h3>
+                <p class="text-lg mb-8 leading-relaxed">
+                    At Tasteroma, your culinary satisfaction and sensory delight are at the heart of everything we do. We are committed to providing an exceptional experience, from the quality of our recipes and educational content to the functionality of our platform and the vibrancy of our community. We continuously strive to exceed your expectations and ensure that every interaction with Tasteroma enhances your love for cooking and appreciation for aroma.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3 text-zesty-orange">Quality Content Guarantee</h4>
+                        <p class="text-md leading-relaxed">
+                            Every recipe and article on Tasteroma is meticulously researched, tested, and crafted to deliver both incredible taste and captivating aroma. We work with culinary experts and passionate home cooks to ensure the highest standards of quality and authenticity in our content.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-bold mb-3 text-zesty-orange">Responsive Support</h4>
+                        <p class="text-md leading-relaxed">
+                            Your feedback is invaluable to us. If you have any questions, suggestions, or encounter any issues, our dedicated support team is here to assist you promptly and courteously. We are committed to resolving any concerns to ensure your seamless experience on Tasteroma.
+                        </p>
+                    </div>
+                    <div class="bg-cream-white p-8 rounded-xl shadow-lg col-span-1 md:col-span-2">
+                        <h4 class="text-2xl font-bold mb-3 text-zesty-orange">Continuous Improvement</h4>
+                        <p class="text-md leading-relaxed">
+                            We are constantly innovating and refining Tasteroma based on user feedback and emerging culinary trends. Our goal is to evolve with your needs, introducing new features, expanding our recipe library, and enhancing the overall platform to provide you with the best possible aroma-driven cooking experience. Your journey with Tasteroma is a shared one, and we're always listening.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-lg mt-8 leading-relaxed">
+                    Thank you for choosing Tasteroma. We are honored to be a part of your culinary adventures and look forward to helping you discover the extraordinary power of aroma.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-bold-charcoal text-cream-white py-12 px-6 md:px-12 rounded-t-lg shadow-inner">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- About Tasteroma -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">About Tasteroma</h5>
+                <p class="text-sm leading-relaxed">
+                    Tasteroma is your premier destination for recipes that engage all your senses. We focus on the incredible interplay of taste and aroma, bringing you global flavors designed to fill your kitchen with unforgettable fragrances. Join our community and embark on a sensory cooking adventure.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">Quick Links</h5>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Home</a></li>
+                    <li><a href="blog.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Blog</a></li>
+                    <li><a href="privacy.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact & Address -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">Contact Us</h5>
+                <p class="text-sm mb-2">Email: <a href="mailto:info@tasteroma.com" class="text-cream-white hover:text-zesty-orange transition duration-300">info@tasteroma.com</a></p>
+                <p class="text-sm mb-2">Phone: +91 12345 67890</p>
+                <p class="text-sm mb-2"><strong>Address:</strong></p>
+                <p class="text-sm leading-relaxed">
+                    Tasteroma Headquarters<br>
+                    123 Aroma Lane, Spice District<br>
+                    Flavor City, Delhi 110001<br>
+                    India
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-warm-spice-brown mt-8 pt-8 text-center text-sm">
+            &copy; 2025 Tasteroma. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

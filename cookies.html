@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasteroma — Cookie Policy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Cream White */
+            color: #263238; /* Bold Charcoal */
+        }
+        .text-zesty-orange { color: #FF7043; }
+        .bg-zesty-orange { background-color: #FF7043; }
+        .text-warm-spice-brown { color: #8D6E63; }
+        .bg-warm-spice-brown { background-color: #8D6E63; }
+        .text-fresh-herb-green { color: #81C784; }
+        .bg-fresh-herb-green { background-color: #81C784; }
+        .bg-cream-white { background-color: #FFF8E1; }
+        .text-bold-charcoal { color: #263238; }
+        .bg-bold-charcoal { background-color: #263238; }
+
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF8E1; /* Cream White */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF7043; /* Zesty Orange */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e65100; /* Darker Zesty Orange */
+        }
+
+        /* Cookie Consent Bar Styling */
+        #cookie-consent-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #263238; /* Bold Charcoal */
+            color: #FFF8E1; /* Cream White */
+            padding: 1.5rem;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        #cookie-consent-bar p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        #cookie-consent-bar .actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #cookie-consent-bar button {
+            padding: 0.75rem 1.75rem;
+            border-radius: 9999px; /* Full rounded */
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #cookie-consent-bar button.accept {
+            background-color: #FF7043; /* Zesty Orange */
+            color: #FFF8E1; /* Cream White */
+        }
+        #cookie-consent-bar button.accept:hover {
+            background-color: #e65100; /* Darker Zesty Orange */
+            transform: translateY(-2px);
+        }
+        #cookie-consent-bar button.decline {
+            background-color: #8D6E63; /* Warm Spice Brown */
+            color: #FFF8E1; /* Cream White */
+        }
+        #cookie-consent-bar button.decline:hover {
+            background-color: #6d4c41; /* Darker Warm Spice Brown */
+            transform: translateY(-2px);
+        }
+        #cookie-consent-bar button.manage {
+            background-color: #81C784; /* Fresh Herb Green */
+            color: #263238; /* Bold Charcoal */
+        }
+        #cookie-consent-bar button.manage:hover {
+            background-color: #66bb6a; /* Darker Fresh Herb Green */
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            #cookie-consent-bar {
+                padding: 1rem;
+            }
+            #cookie-consent-bar p {
+                font-size: 0.85rem;
+            }
+            #cookie-consent-bar .actions {
+                flex-direction: column;
+                gap: 0.75rem;
+                width: 100%;
+            }
+            #cookie-consent-bar button {
+                width: 80%; /* Make buttons wider on small screens */
+                margin: 0 auto; /* Center buttons */
+            }
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+    <!-- Header -->
+    <header class="bg-cream-white shadow-lg py-4 px-6 md:px-12 fixed w-full z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/FF7043/FFF?text=T" alt="Tasteroma Logo" class="rounded-full shadow-md">
+                <h1 class="text-2xl font-bold text-bold-charcoal">Tasteroma</h1>
+            </div>
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Home</a></li>
+                    <li><a href="blog.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Blog</a></li>
+                    <li><a href="privacy.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Privacy</a></li>
+                    <li><a href="terms.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Terms</a></li>
+                    <li><a href="cookies.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Cookies</a></li>
+                    <li><a href="contact.html" class="text-bold-charcoal hover:text-zesty-orange transition duration-300 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20 py-16 px-6 md:px-12 bg-cream-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-bold-charcoal text-center mb-10">Tasteroma Cookie Policy</h2>
+            <p class="text-lg text-warm-spice-brown mb-6 leading-relaxed">
+                This Cookie Policy explains what cookies are, how Tasteroma uses them, the types of cookies we use, and how you can manage your preferences. By continuing to browse and use our website, you consent to the use of cookies in accordance with this policy. We are committed to transparency and providing you with clear information about the technologies we use to enhance your experience.
+            </p>
+            <p class="text-lg text-warm-spice-brown mb-8 leading-relaxed">
+                For more detailed information on how we collect, use, and protect your personal data, please refer to our <a href="privacy.html" class="text-zesty-orange hover:underline font-semibold">Privacy Policy</a>.
+            </p>
+
+            <h3 class="text-3xl font-bold text-zesty-orange mb-6">What Are Cookies?</h3>
+            <p class="text-md mb-8 leading-relaxed">
+                Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide reporting information and to remember your preferences. For example, cookies can remember your login details, language settings, and shopping cart items. They allow websites to recognize your device and store some information about your past actions or preferences. This makes your next visit easier and the site more useful to you. Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser.
+            </p>
+
+            <h3 class="text-3xl font-bold text-zesty-orange mb-6">How We Use Cookies</h3>
+            <p class="text-md mb-4 leading-relaxed">
+                Tasteroma uses cookies for several purposes. They are essential for the basic functionality of our website, allowing you to navigate and use our features. Beyond that, cookies help us understand how you interact with our content, enabling us to improve our services and tailor your experience. We also use cookies for advertising purposes, to show you relevant content and offers. Specifically, we use cookies to:
+            </p>
+            <ul class="list-disc list-inside text-md mb-6 space-y-2">
+                <li>Ensure the proper functioning of the website (e.g., keeping you logged in).</li>
+                <li>Analyze website traffic and user behavior to identify popular content and areas for improvement.</li>
+                <li>Remember your preferences (e.g., language, region, aromatic preferences).</li>
+                <li>Personalize your experience by recommending recipes and content based on your interests.</li>
+                <li>Deliver targeted advertisements and measure the effectiveness of our marketing campaigns.</li>
+                <li>Facilitate social media sharing and integration.</li>
+            </ul>
+            <p class="text-md mb-8 leading-relaxed">
+                Our use of cookies is always aimed at providing you with a better, more personalized, and more efficient browsing experience.
+            </p>
+
+            <h3 class="text-3xl font-bold text-zesty-orange mb-6">Types of Cookies We Use</h3>
+            <p class="text-md mb-4 leading-relaxed">
+                Tasteroma utilizes different categories of cookies to fulfill various functions on our website. Understanding these types will help you manage your preferences more effectively.
+            </p>
+            <ul class="list-disc list-inside text-md mb-8 space-y-4">
+                <li>
+                    <p class="font-semibold">Strictly Necessary Cookies:</p>
+                    <p class="text-md leading-relaxed">
+                        These cookies are absolutely essential for the website to function properly. Without them, you would not be able to navigate the site, use core features like accessing secure areas, or add items to a shopping cart. They enable basic functionalities such as security, network management, and accessibility. These cookies do not store any personally identifiable information and are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms. You cannot opt-out of these cookies as the website cannot function without them. Their primary role is to ensure the fundamental operation and security of our online presence, making your basic interaction with Tasteroma possible. They are crucial for maintaining the integrity and availability of our services, ensuring that you can access and utilize the core functionalities of the platform without interruption.
+                    </p>
+                </li>
+                <li>
+                    <p class="font-semibold">Performance/Analytical Cookies:</p>
+                    <p class="text-md leading-relaxed">
+                        These cookies collect information about how visitors use our website, such as which pages are visited most often, how much time is spent on each page, and if users encounter any error messages. This data is aggregated and anonymous, meaning it cannot be used to identify you personally. The sole purpose of these cookies is to help us understand and improve how our website performs and to identify areas for enhancement. For example, if we notice a particular page has a high exit rate, we can investigate and optimize its content or design. This continuous analysis allows us to refine the user experience, making the site more intuitive and efficient. By understanding user behavior patterns, we can make informed decisions to optimize content, navigation, and overall site structure, ensuring that Tasteroma remains a valuable and user-friendly resource for all our visitors.
+                    </p>
+                </li>
+                <li>
+                    <p class="font-semibold">Functionality Cookies:</p>
+                    <p class="text-md leading-relaxed">
+                        Functionality cookies allow our website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features. For instance, they can remember changes you have made to text size, fonts, and other customizable parts of web pages. They may also be used to provide services you have asked for, such as watching a video or commenting on a blog. The information these cookies collect may be anonymized, and they cannot track your browsing activity on other websites. Their purpose is to make your experience on Tasteroma more convenient and tailored to your preferences, reducing the need for you to repeatedly input information or set preferences during subsequent visits. This personalization contributes significantly to a smoother and more enjoyable user journey on our platform.
+                    </p>
+                </li>
+                <li>
+                    <p class="font-semibold">Targeting/Advertising Cookies:</p>
+                    <p class="text-md leading-relaxed">
+                        These cookies are used to deliver advertisements more relevant to you and your interests. They are usually placed by advertising networks with our permission. They remember that you have visited a website and this information is shared with other organizations such as advertisers. This means that after you have been to Tasteroma, you may see advertisements about Tasteroma or related culinary content on other sites. They also limit the number of times you see an advertisement and help measure the effectiveness of advertising campaigns. These cookies track your browsing habits across different websites to build a profile of your interests, which is then used to display personalized ads. While they enhance the relevance of ads you see, you have the option to control or opt-out of these cookies.
+                    </p>
+                </li>
+                <li>
+                    <p class="font-semibold">Third-Party Cookies:</p>
+                    <p class="text-md leading-relaxed">
+                        In addition to our own cookies (first-party cookies), we may also use various third-parties cookies to report usage statistics of the service, deliver advertisements on and through the service, and so on. These cookies are set by a domain different from that of our website. For example, we might use Google Analytics cookies to understand website traffic or social media platform cookies for sharing features. These third parties have their own privacy and cookie policies, which we encourage you to review. We do not have direct control over these cookies once they are set by the third party. However, we select our third-party partners carefully to ensure they adhere to high data protection standards.
+                    </p>
+                </li>
+            </ul>
+
+            <h3 class="text-3xl font-bold text-zesty-orange mb-6">Managing Your Cookie Preferences</h3>
+            <p class="text-md mb-8 leading-relaxed">
+                You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by clicking on the appropriate opt-out links provided in the cookie consent banner, or by setting your preferences within your web browser. Most web browsers allow you to control cookies through their settings. Please note that if you choose to reject cookies, you may still use our website, though your access to some functionality and areas of our website may be restricted. For example, you might not be able to log in, save preferences, or experience personalized content.
+            </p>
+            <p class="text-md mb-8 leading-relaxed">
+                Below are links to guides on how to manage cookies for popular web browsers:
+                <ul class="list-disc list-inside ml-5 space-y-1 mt-2">
+                    <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" class="text-fresh-herb-green hover:underline">Google Chrome</a></li>
+                    <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" class="text-fresh-herb-green hover:underline">Mozilla Firefox</a></li>
+                    <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" class="text-fresh-herb-green hover:underline">Apple Safari</a></li>
+                    <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40c9-9324-853e-d3d1ed10bd61" target="_blank" class="text-fresh-herb-green hover:underline">Microsoft Edge</a></li>
+                </ul>
+            </p>
+
+            <h3 class="text-3xl font-bold text-zesty-orange mb-6">Detailed Cookie-Related Points and Explanations</h3>
+            <p class="text-md mb-8 leading-relaxed">
+                To provide you with the utmost clarity and transparency, we delve into specific aspects of our cookie usage and related data handling practices. Each point below offers a detailed explanation to ensure you are fully informed about how cookies contribute to your Tasteroma experience and how your data is managed.
+            </p>
+
+            <div class="space-y-12">
+                <!-- Point 1 -->
+                <div>
+                    <h4 class="text-2xl font-semibold text-bold-charcoal mb-3">1. Purpose of Cookie Data Collection</h4>
+                    <p class="text-md leading-relaxed">
+                        The primary purpose behind Tasteroma's collection of data via cookies is to enhance and personalize your user experience. This involves understanding your preferences, optimizing website performance, and delivering content that is most relevant to your culinary interests. For instance, by remembering your preferred language or the last recipe category you explored, cookies allow us to present a more tailored interface upon your return. This data also helps us to identify technical issues and areas for improvement, ensuring a smooth and efficient browsing journey. Furthermore, aggregated and anonymized data from cookies provides valuable insights into overall website traffic patterns and popular features, guiding our content development and platform enhancements. We use this information not to identify individuals, but to understand collective user behavior and continuously refine our service offerings. The ultimate goal is to create a seamless, intuitive, and highly engaging environment for every visitor, making Tasteroma a truly enjoyable space for aromatic cooking enthusiasts.
+                    </p>
+                </div>
+                <!-- Point 2 -->
+                <div>
+                    <h4 class="text-2xl font-semibold text-bold-charcoal mb-3">2. Data Anonymization and Aggregation</h4>
+                    <p class="text-md leading-relaxed">
+                        A significant portion of the data collected through cookies is anonymized and aggregated. This means that individual user identities are stripped from the data, and the information is combined with data from many other users. For example, instead of knowing that "User X spent 5 minutes on the Moroccan Lamb Tagine recipe page," we learn that "5,000 users spent an average of 4.5 minutes on the Moroccan Lamb Tagine recipe page this week." This aggregated data provides statistical insights into website usage trends without compromising individual privacy. It allows us to analyze broad patterns, such as peak traffic times or popular recipe types, which are invaluable for optimizing server resources and content strategy. We prioritize anonymization to ensure that our analytical efforts contribute to a better service while strictly upholding our commitment to user privacy. This approach enables us to derive meaningful insights without linking them back to specific individuals, maintaining a high standard of data protection.
+                    </p>
+                </div>
+                <!-- Point 3 -->
+                <div>
+                    <h4 class="text-2xl font-semibold text-bold-charcoal mb-3">3. First-Party vs. Third-Party Cookies Explained</h4>
+                    <p class="text-md leading-relaxed">
+                        It's important to distinguish between first-party and third-party cookies. First-party cookies are set directly by the website you are visiting – in this case, Tasteroma.com. These cookies are typically used for essential functions like maintaining your login session, remembering your site preferences, or tracking your activity within our specific domain. They are crucial for the direct functionality and personalization of your experience on Tasteroma. Third-party cookies, on the other hand, are set by domains other than the one you are visiting. These often come from external services embedded on our site, such as advertising networks (e.g., Google Ads), social media plugins (e.g., Facebook Like button), or analytics providers (e.g., Google Analytics). While we select our third-party partners carefully, we do not have direct control over how these external entities manage their cookies or the data they collect. We encourage you to review their respective privacy and cookie policies for more information.
+                    </p>
+                </div>
+                <!-- Point 4 -->
+                <div>
+                    <h4 class="text-2xl font-semibold text-bold-charcoal mb-3">4. Duration of Cookie Storage</h4>
+                    <p class="text-md leading-relaxed">
+                        The lifespan of cookies varies significantly depending on their purpose. Session cookies are temporary and are automatically deleted from your device as soon as you close your web browser. They are primarily used for functions that require tracking your activity within a single browsing session, such as keeping you logged in or remembering items in your shopping cart before checkout. Persistent cookies, however, remain on your device for a longer, predefined period or until you manually delete them. This duration can range from a few hours to several months or even years. For example, a persistent cookie might remember your language preference for a year, so you don't have to select it every time you visit. Advertising cookies often have longer lifespans to track user interests over time. We strive to set cookie durations that are proportionate to their intended function, minimizing unnecessary long-term storage of data on your device.
+                    </p>
+                </div>
+                <!-- Point 5 -->
+                <div>
+                    <h4 class="text-2xl font-semibold text-bold-charcoal mb-3">5. Impact of Declining Necessary Cookies</h4>
+                    <p class="text-md leading-relaxed">
+                        Strictly necessary cookies are fundamental to the operation of Tasteroma.com. These cookies enable core functionalities without which the website simply cannot work as intended. For example, they manage your login session, ensure secure connections, and facilitate navigation between pages. If you attempt to block or decline these essential cookies through your browser settings, you will likely experience significant disruptions to your browsing experience. You may find that you cannot log into your account, save your preferences, or access certain secure areas of the website. Basic features might fail, leading to a frustrating and incomplete interaction with our platform. Therefore, while you have the technical ability to block all cookies, declining strictly necessary cookies is not recommended as it will severely impair the usability and functionality of Tasteroma.com.
+                    </p>
+                </div>
+                <!-- Point 6 -->
+                <div>
+                    <h4 class="text-2xl font-semibold text-bold-charcoal mb-3">6. Opt-Out Mechanisms for Non-Essential Cookies</h4>
+                    <p class="text-md leading-relaxed">
+                        For non-essential cookies, such as performance, functionality, and targeting/advertising cookies, Tasteroma provides clear opt-out mechanisms. Our cookie consent banner, which appears upon your first visit, allows you to accept all cookies, decline all non-necessary cookies, or manage your preferences more granularly. This gives you direct control over which categories of cookies you permit. Additionally, you can always adjust your cookie settings within your web browser. Most modern browsers offer comprehensive controls that allow you to block all cookies, block third-party cookies, or delete specific cookies. We also provide links to major advertising network opt-out pages where you can manage your preferences for targeted advertising across multiple websites. Our commitment is to empower you with choices regarding your online privacy and data.
+                    </p>
+                </div>
+                <!-- Point 7 -->
+                <div>
+                    <h4 class="text-2xl font-semibold text-bold-charcoal mb-3">7. Use of Cookies for Personalization</h4>
+                    <p class="text-md leading-relaxed">
+                        Cookies play a vital role in personalizing your experience on Tasteroma. By remembering your past interactions, such as recipes you've viewed, categories you've explored, or search terms you've used, functionality cookies enable us to tailor content recommendations specifically for you. For example, if you frequently browse "Bold & Spicy" recipes, we might highlight new additions in that category on your homepage. This personalization extends to remembering your language preferences, display settings, and even your "Aroma Profile" if you create one. The goal is to make your visits more relevant and efficient, reducing the time you spend searching and increasing the likelihood of discovering content that truly resonates with your culinary interests. This tailored experience is designed to make Tasteroma feel more intuitive and uniquely yours, enhancing your overall engagement with our platform.
+                    </p>
+                </div>
+                <!-- Point 8 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">8. Security Measures for Cookie Data</h4>
+                    <p class="text-md leading-relaxed">
+                        While cookies themselves are small text files and generally do not contain directly identifiable personal information, the data they help collect is handled with stringent security measures. Tasteroma employs various technical and organizational safeguards to protect any data associated with cookies from unauthorized access, alteration, disclosure, or destruction. This includes using secure HTTPS protocols for all website communication, ensuring data encryption during transmission, and storing data on secure servers with restricted access. We regularly review our security practices and update them to counter evolving threats. Furthermore, access to aggregated cookie data is limited to authorized personnel who require it for specific analytical or operational purposes. Our commitment to data security extends to all forms of data we handle, including that facilitated by cookies, ensuring your information is treated with the utmost care and protection.
+                    </p>
+                </div>
+                <!-- Point 9 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">9. Cookie Use in Analytics and Reporting</h4>
+                    <p class="text-md leading-relaxed">
+                        Performance and analytical cookies are fundamental to our understanding of how Tasteroma.com is being used. These cookies collect anonymous data on user interactions, such as page views, time spent on site, navigation paths, and referral sources. This information is then processed by analytics tools (e.g., Google Analytics) to generate comprehensive reports. These reports provide invaluable insights into website performance, content popularity, and user engagement trends. For instance, we can identify which recipe categories are most popular, which blog posts receive the most attention, or where users might be encountering difficulties in their browsing journey. This data is always aggregated and de-identified, meaning it cannot be traced back to individual users. The insights derived from these cookies enable us to make data-driven decisions for continuous improvement, optimizing the website's structure, content, and functionality to better serve our entire user base.
+                    </p>
+                </div>
+                <!-- Point 10 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">10. Third-Party Advertising and Data Sharing</h4>
+                    <p class="text-md leading-relaxed">
+                        Tasteroma may partner with third-party advertising networks to display relevant advertisements on our website and across the internet. These partners may use targeting/advertising cookies to collect information about your browsing activities on Tasteroma.com and other websites. This data helps them build a profile of your interests, which is then used to deliver personalized ads that are more likely to be relevant to you. While we permit these third parties to place cookies for advertising purposes, we do not directly share personally identifiable information with them without your explicit consent. The data collected by these third-party cookies is governed by the respective privacy policies of those advertising networks. We encourage you to review their policies and utilize any opt-out mechanisms they provide if you wish to control the use of your data for targeted advertising. Our aim is to balance providing valuable content with supporting our operations through advertising, always with transparency about data practices.
+                    </p>
+                </div>
+                <!-- Point 11 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">11. Cookie Consent Withdrawal Process</h4>
+                    <p class="text-md leading-relaxed">
+                        You have the right to withdraw your cookie consent at any time. If you initially accepted non-essential cookies, you can change your mind and revoke that consent. The easiest way to do this is often through your web browser settings, where you can delete existing cookies and configure future cookie preferences. Additionally, we may provide a "Manage Cookie Preferences" link or button on our website, typically in the footer or within a dedicated privacy settings section. Clicking this will re-open the cookie consent banner, allowing you to adjust your choices. Please note that withdrawing consent will only apply to future cookie placements and data collection; it will not affect data already collected or cookies already placed on your device before the withdrawal. We strive to make the process of managing your cookie preferences as straightforward and accessible as possible, empowering you to maintain control over your data.
+                    </p>
+                </div>
+                <!-- Point 12 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">12. Browser Settings vs. Website Consent Tools</h4>
+                    <p class="text-md leading-relaxed">
+                        It's important to understand the difference between managing cookies through your web browser settings and using website-specific cookie consent tools. Your web browser (e.g., Chrome, Firefox, Safari) provides overarching control, allowing you to block all cookies, block third-party cookies, or delete specific cookies across all websites you visit. This is a powerful, universal control. Website-specific consent tools, like our cookie banner, offer more granular control for that particular website. They allow you to accept or reject different categories of cookies (e.g., analytics, advertising) specifically for Tasteroma.com, without affecting your settings for other sites. While browser settings offer broad control, website consent tools provide a more tailored approach for individual sites. For comprehensive control, it's advisable to utilize both, understanding that browser settings can override website-specific preferences if set to block all cookies.
+                    </p>
+                </div>
+                <!-- Point 13 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">13. Cookie Data Retention Policy</h4>
+                    <p class="text-md leading-relaxed">
+                        The retention period for data collected via cookies varies depending on the cookie type and its purpose. As mentioned, session cookies are deleted once you close your browser. Persistent cookies have predefined expiration dates, which can range from a few hours to several years. For instance, a cookie remembering your login might last for a few weeks, while an analytics cookie tracking long-term trends might persist for two years. We ensure that cookie data is not retained for longer than necessary to fulfill the purposes for which it was collected, or as required by applicable laws. Once the retention period expires, the data is either deleted or anonymized beyond recognition. Our data retention policy for cookies is designed to be compliant with relevant privacy regulations, ensuring that your data is not held indefinitely without a legitimate purpose.
+                    </p>
+                </div>
+                <!-- Point 14 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">14. Impact on User Experience Without Cookies</h4>
+                    <p class="text-md leading-relaxed">
+                        While Tasteroma.com remains accessible even if you decline non-essential cookies, your overall user experience may be significantly altered. Without functionality cookies, for example, the website might not remember your preferences, requiring you to re-select language or display settings on every visit. Personalized recipe recommendations, which rely on tracking your past browsing behavior, would also be unavailable. Performance cookies are crucial for us to identify and fix issues, so without them, the site might not be optimized as effectively. Advertising cookies, while sometimes perceived negatively, contribute to supporting the free content we provide. Declining them might mean you see less relevant ads, or potentially more frequent, generic ads. In essence, while the core content remains, the tailored, smooth, and continuously improved experience that cookies facilitate would be diminished.
+                    </p>
+                </div>
+                <!-- Point 15 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">15. Cookie Consent Records and Audit Trails</h4>
+                    <p class="text-md leading-relaxed">
+                        To demonstrate compliance with privacy regulations like GDPR and CCPA, Tasteroma maintains records of your cookie consent choices. When you interact with our cookie consent banner and make a selection (e.g., accept all, decline non-essential), this choice is recorded and stored securely. This record typically includes a timestamp of your consent, the specific choices you made, and a unique identifier associated with your device or browser. These consent records serve as an audit trail, allowing us to prove that we have obtained valid consent for cookie placement, as required by law. This system ensures accountability and helps us to respect your preferences consistently across your visits. These records are kept separate from your personal profile data and are only accessed for compliance purposes or in the event of a data privacy inquiry.
+                    </p>
+                </div>
+                <!-- Point 16 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">16. Regular Cookie Scans and Updates</h4>
+                    <p class="text-md leading-relaxed">
+                        Tasteroma conducts regular scans of its website to identify all cookies being used and to ensure our Cookie Policy remains accurate and up-to-date. The digital landscape is constantly evolving, with new technologies and third-party integrations emerging frequently. These scans help us discover any new cookies that might have been introduced, categorize them correctly, and update our policy accordingly. This proactive approach ensures that the information we provide to you about our cookie usage is always current and comprehensive. It also allows us to verify that our cookie consent mechanisms are effectively managing all cookies present on the site. This commitment to regular auditing reflects our dedication to transparency and continuous compliance with data privacy standards, providing you with peace of mind regarding our data practices.
+                    </p>
+                </div>
+                <!-- Point 17 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">17. Cookie-Related Data Processing Locations</h4>
+                    <p class="text-md leading-relaxed">
+                        The data collected through cookies may be processed and stored on servers located in various geographical regions, depending on the service providers we utilize. For instance, data processed by Google Analytics might be stored on Google's servers, which could be located globally. We take all necessary steps to ensure that any international transfers of cookie-related data comply with applicable data protection laws, such as implementing Standard Contractual Clauses (SCCs) or relying on other valid transfer mechanisms. Regardless of the storage location, we ensure that the same high standards of data security and privacy protection outlined in this policy are applied. Our choice of service providers is also based on their commitment to data protection and their ability to provide adequate safeguards for your information, irrespective of where the data processing occurs.
+                    </p>
+                </div>
+                <!-- Point 18 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">18. Role of Cookies in A/B Testing</h4>
+                    <p class="text-md leading-relaxed">
+                        Tasteroma may use performance or analytical cookies to facilitate A/B testing. A/B testing is a method of comparing two versions of a webpage or app feature against each other to determine which one performs better. For example, we might test two different layouts for a recipe page to see which one leads to higher engagement. Cookies are essential in this process to ensure that a user consistently sees the same version of the test (either A or B) across their visits, preventing a fragmented experience and ensuring accurate test results. The data collected during A/B tests is aggregated and anonymized, allowing us to make data-driven decisions about website design and functionality without tracking individual user behavior. This helps us continuously optimize Tasteroma for a more intuitive and enjoyable user experience for everyone.
+                    </p>
+                </div>
+                <!-- Point 19 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">19. Cookie Use for Fraud Prevention</h4>
+                    <p class="text-md leading-relaxed">
+                        In our commitment to maintaining a secure and trustworthy environment, certain strictly necessary or security-related cookies may be employed for fraud prevention purposes. These cookies help us detect and prevent malicious activities, such as automated bot attacks, unauthorized access attempts to user accounts, or other forms of fraudulent behavior. For example, they might track unusual login patterns or rapid, repetitive actions that indicate automated activity rather than genuine user interaction. This data is processed in a way that minimizes the collection of personal information, focusing primarily on behavioral anomalies. The use of such cookies is vital for protecting both Tasteroma's infrastructure and our users' accounts from potential threats, ensuring the integrity and safety of our platform for all legitimate visitors.
+                    </p>
+                </div>
+                <!-- Point 20 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">20. Compliance with Evolving Cookie Regulations</h4>
+                    <p class="text-md leading-relaxed">
+                        The landscape of cookie regulations is constantly evolving, with new laws and guidelines emerging globally (e.g., ePrivacy Directive, GDPR, CCPA, LGPD). Tasteroma is committed to staying abreast of these developments and adapting its cookie practices to ensure continuous compliance. This involves regularly reviewing our Cookie Policy, updating our consent mechanisms, and adjusting our data processing procedures as necessary. We actively monitor guidance from data protection authorities and industry best practices to ensure that our approach to cookies is not only legally sound but also respects user privacy to the highest degree. Our dedication to compliance reflects our broader commitment to ethical data handling and building trust with our users, regardless of their geographical location.
+                    </p>
+                </div>
+                <!-- Point 21 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">21. Cookie Use for Load Balancing</h4>
+                    <p class="text-md leading-relaxed">
+                        Strictly necessary cookies can also be utilized for load balancing purposes. Load balancing is a technique that distributes network traffic efficiently across multiple servers. This ensures that no single server is overloaded, which helps to maintain the website's speed, responsiveness, and availability, especially during periods of high traffic. A load balancing cookie might, for instance, direct your request to a specific server and ensure that all subsequent requests from your browsing session go to the same server. This prevents disruptions and provides a consistent user experience. These cookies are purely technical in nature and do not collect any personal information beyond what is necessary to manage server distribution. Their role is critical for ensuring the stability and performance of Tasteroma.com, allowing you to access our content smoothly without encountering delays or errors.
+                    </p>
+                </div>
+                <!-- Point 22 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">22. Cookie Use for User Authentication</h4>
+                    <p class="text-md leading-relaxed">
+                        When you log into your Tasteroma account, strictly necessary cookies are used to authenticate your identity and maintain your logged-in session. These "authentication cookies" store a unique session identifier that allows our servers to recognize you as an authenticated user as you navigate through different pages of the website. Without these cookies, you would have to log in repeatedly for almost every action you take, making the user experience impractical. These cookies are typically session-based and are deleted when you close your browser, or they might be persistent for a short period to allow for "remember me" functionality if you opt for it. They are vital for providing secure access to your personalized content, saved recipes, and community features, ensuring that only you can access your account information.
+                    </p>
+                </div>
+                <!-- Point 23 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">23. Cookie Use in Shopping Carts and E-commerce</h4>
+                    <p class="text-md leading-relaxed">
+                        If Tasteroma includes an e-commerce section (e.g., "Shop the Aroma"), strictly necessary cookies are indispensable for the shopping cart functionality. These cookies allow the website to remember the items you've added to your cart as you continue browsing or navigate to different pages. Without such cookies, your cart would empty every time you clicked away from a product page, making online shopping impossible. They ensure a seamless and persistent shopping experience, allowing you to collect items over time before proceeding to checkout. These cookies typically do not store personal identifiable information beyond the contents of your cart and are often session-based, though some may persist for a short period to remember your cart if you return soon.
+                    </p>
+                </div>
+                <!-- Point 24 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">24. Cookie Use for Language Preferences</h4>
+                    <p class="text-md leading-relaxed">
+                        Functionality cookies are used to remember your language preferences. If Tasteroma offers content in multiple languages, a cookie will store your chosen language so that the website automatically displays content in that language on subsequent visits. This eliminates the need for you to manually select your preferred language every time you access the site, providing a more convenient and personalized experience. These cookies enhance usability by ensuring that the website adapts to your specific needs and settings, making your interaction with Tasteroma more intuitive and efficient, especially for our global audience. The information stored is typically non-sensitive and solely focused on improving your browsing comfort.
+                    </p>
+                </div>
+                <!-- Point 25 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">25. Cookie Use for Regional Content Delivery</h4>
+                    <p class="text-md leading-relaxed">
+                        Similar to language preferences, functionality cookies can be used to remember your regional preferences. This allows Tasteroma to deliver content, recipes, or offers that are specific to your geographical location. For example, certain seasonal recipes or local spice kit promotions might be displayed based on your detected region, enhancing the relevance of the content you see. These cookies help us to tailor the Tasteroma experience to your local context, ensuring that the information and products presented are most applicable to you. While they may infer your region from your IP address, the cookie itself stores a preference, not your precise location, and is used solely to optimize content delivery for your convenience.
+                    </p>
+                </div>
+                <!-- Point 26 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">26. Cookie Use for User Interface Customization</h4>
+                    <p class="text-md leading-relaxed">
+                        Functionality cookies enable Tasteroma to remember your user interface customizations. This includes preferences such as text size, font choices, color schemes (if customizable), or specific layout settings you might have adjusted. By storing these preferences in a cookie, the website can recall your preferred display settings on subsequent visits, ensuring a consistent and comfortable viewing experience. This level of personalization allows you to tailor the website's appearance to your visual needs, making Tasteroma more accessible and enjoyable for a wider range of users. These cookies are designed to enhance usability by remembering your chosen aesthetic and functional settings, contributing to a more seamless and personalized browsing environment.
+                    </p>
+                </div>
+                <!-- Point 27 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">27. Cookie Use for Session Management</h4>
+                    <p class="text-md leading-relaxed">
+                        Session management is a core function facilitated by strictly necessary cookies. These cookies are crucial for maintaining the state of your interaction with Tasteroma.com during a single browsing session. For instance, if you log in, a session cookie ensures that you remain logged in as you navigate from one page to another without needing to re-enter your credentials. They help the website recognize you as the same user throughout your visit, allowing for seamless transitions and consistent access to personalized features. These cookies are temporary and are typically deleted once you close your web browser, ensuring that your session information is not persistently stored on your device after you leave the site. Their role is fundamental to the continuous and functional flow of your online activity on Tasteroma.
+                    </p>
+                </div>
+                <!-- Point 28 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">28. Cookie Use in Social Media Integration</h4>
+                    <p class="text-md leading-relaxed">
+                        Tasteroma may integrate social media features, such as "Share" buttons or embedded social feeds. When you interact with these features, social media companies (e.g., Facebook, Twitter, Instagram) may set third-party cookies on your device. These cookies allow the social media platforms to recognize you when you are logged into their services, enabling features like sharing content directly from our site or tracking your interaction with their embedded content. The data collected by these cookies is governed by the respective privacy and cookie policies of the social media companies. Tasteroma does not control these third-party cookies or the data they collect. We encourage you to review the privacy settings on your social media accounts to manage your preferences for data sharing and tracking by these platforms.
+                    </p>
+                </div>
+                <!-- Point 29 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">29. Cookie Use for Affiliate Marketing Tracking</h4>
+                    <p class="text-md leading-relaxed">
+                        In some instances, Tasteroma may use targeting or advertising cookies for affiliate marketing tracking. This means that if you click on a link on our site that leads to a third-party product or service (e.g., a recommended spice tool on an e-commerce site), a cookie might be placed on your device by the affiliate partner. This cookie's purpose is solely to track that you originated from Tasteroma.com, allowing us to receive a small commission if you make a purchase on the partner's site. This tracking is typically anonymous and does not identify you personally. It's a common practice in online marketing that helps support the free content and services we provide on Tasteroma. You can usually opt-out of such tracking through browser settings or by managing preferences on the third-party site.
+                    </p>
+                </div>
+                <!-- Point 30 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">30. Cookie Use for Website Security and Integrity</h4>
+                    <p class="text-md leading-relaxed">
+                        Beyond basic authentication, certain cookies contribute to the overall security and integrity of Tasteroma.com. These cookies might monitor for suspicious activity, detect potential security breaches, or help protect against cross-site scripting (XSS) attacks and other vulnerabilities. They often work in conjunction with our server-side security systems to identify and mitigate threats in real-time. While these cookies may collect technical data about your connection or browser, they are primarily focused on maintaining the safety and stability of the platform for all users. Their role is to create a robust defense against cyber threats, ensuring that your browsing experience on Tasteroma is secure and protected from malicious activities. These are typically classified as strictly necessary or security cookies.
+                    </p>
+                </div>
+                <!-- Point 31 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">31. Cookie Use for User Feedback and Surveys</h4>
+                    <p class="text-md leading-relaxed">
+                        Tasteroma may use functionality cookies to manage user feedback and survey participation. For example, a cookie might be set to prevent the same survey pop-up from appearing repeatedly to the same user, or to remember if you have already completed a particular feedback form. This ensures a less intrusive experience and helps us collect genuine, diverse feedback without annoying our users. The data collected through these surveys is typically anonymized or aggregated for analysis, unless you explicitly provide personal information within the survey itself. These cookies help us gather valuable insights into your experience and preferences, allowing us to continuously improve our content and services based on direct user input, while respecting your engagement boundaries.
+                    </p>
+                </div>
+                <!-- Point 32 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">32. Cookie Use for Content Personalization (Advanced)</h4>
+                    <p class="text-md leading-relaxed">
+                        Beyond simple language or region settings, advanced content personalization through cookies can involve building a more nuanced profile of your interests. By analyzing your interactions with various recipe types, blog topics, and culinary techniques, performance and targeting cookies can help us understand your unique "aroma profile" or preferred cooking style. This allows Tasteroma to dynamically adjust the content you see, recommending not just similar recipes, but also suggesting complementary spices, cooking tools, or related articles that align with your evolving tastes. This deep personalization aims to make your Tasteroma experience highly relevant and engaging, anticipating your needs and introducing you to new aromatic adventures that you're likely to enjoy, making your culinary exploration more efficient and inspiring.
+                    </p>
+                </div>
+                <!-- Point 33 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">33. Cookie Use for Marketing Campaign Optimization</h4>
+                    <p class="text-md leading-relaxed">
+                        Targeting and advertising cookies are instrumental in optimizing our marketing campaigns. These cookies help us understand which advertisements or promotional messages are most effective in reaching our target audience. By tracking clicks on ads, conversions (e.g., signing up for a newsletter, viewing a specific recipe), and user engagement with marketing content, we can refine our strategies. This allows us to allocate our marketing resources more efficiently and deliver campaigns that are genuinely relevant to potential and existing users. The data used for this optimization is typically aggregated and anonymized, focusing on campaign performance rather than individual user identification. This ensures that our marketing efforts are both effective and respectful of user privacy, providing value to both Tasteroma and our audience.
+                    </p>
+                </div>
+                <!-- Point 34 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">34. Cookie Use for Cross-Device Tracking</h4>
+                    <p class="text-md leading-relaxed">
+                        Some third-party advertising or analytics partners may use cookies in conjunction with other technologies to enable cross-device tracking. This means they might attempt to link your activity across different devices (e.g., your smartphone, tablet, and desktop computer) if you log into the same service on those devices. This allows advertisers to present a consistent advertising experience across your various devices. While Tasteroma itself does not directly perform cross-device tracking, our third-party partners might. The ability to opt-out of such tracking is typically managed through your browser settings or by adjusting your privacy preferences with the respective third-party service providers. We recommend reviewing the privacy policies of any third-party services you use across multiple devices to understand their cross-device tracking practices.
+                    </p>
+                </div>
+                <!-- Point 35 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">35. Cookie Use for Technical Error Reporting</h4>
+                    <p class="text-md leading-relaxed">
+                        Performance cookies can also be used for technical error reporting. If you encounter an error or a bug on Tasteroma.com, certain cookies might collect anonymous data about the error, such as the page where it occurred, the type of error, and your browser information. This data is crucial for our development team to diagnose and fix issues quickly, ensuring a stable and reliable website experience for all users. This information is purely technical and does not contain any personally identifiable data. It helps us to proactively identify and resolve problems before they impact a wider audience, contributing to the continuous improvement of our platform's stability and performance. Our aim is to minimize disruptions and provide a seamless browsing experience.
+                    </p>
+                </div>
+                <!-- Point 36 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">36. Cookie Use for Content Delivery Networks (CDNs)</h4>
+                    <p class="text-md leading-relaxed">
+                        Tasteroma may utilize Content Delivery Networks (CDNs) to deliver website assets (like images, videos, and scripts) more efficiently. CDNs use cookies to optimize content delivery by routing your request to the closest server, reducing load times and improving overall website performance. These cookies are typically strictly necessary or performance-related. They help ensure that Tasteroma.com loads quickly and smoothly, regardless of your geographical location, by optimizing the delivery path of static content. This enhances your browsing speed and overall user experience, making recipe viewing and navigation more fluid. The data collected by CDN cookies is primarily technical and related to network optimization, not personal identification.
+                    </p>
+                </div>
+                <!-- Point 37 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">37. Cookie Use for User Preferences (Long-Term)</h4>
+                    <p class="text-md leading-relaxed">
+                        Beyond session-based preferences, functionality cookies can store long-term user preferences. For example, if you consistently use a specific unit of measurement (e.g., metric vs. imperial) for recipes, a persistent cookie can remember this choice for an extended period, even across multiple browsing sessions. This saves you the effort of repeatedly setting your preferences and ensures that Tasteroma adapts to your consistent needs over time. These cookies are designed to provide a highly personalized and convenient experience, making your interaction with the website more efficient and tailored to your individual habits, contributing significantly to user satisfaction and ease of use.
+                    </p>
+                </div>
+                <!-- Point 38 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">38. Cookie Use for Website Personalization (Aroma Profile)</h4>
+                    <p class="text-md leading-relaxed">
+                        As highlighted in our interactive features, Tasteroma aims to offer a "Personal Aroma Profile." Functionality and performance cookies are instrumental in building and maintaining this profile. By tracking your interactions with various aromatic ingredients, spice levels, and recipe categories, these cookies help us understand your unique aromatic preferences. This allows us to provide highly tailored recipe recommendations, suggest new spices to explore, or even highlight blog posts that align with your developing aromatic tastes. This deep personalization is designed to make Tasteroma feel incredibly relevant and inspiring, guiding you on a truly unique culinary journey based on your evolving sensory preferences. The data collected is used to enhance your personalized experience, not for external sharing without consent.
+                    </p>
+                </div>
+                <!-- Point 39 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">39. Cookie Use for Regulatory Compliance Tracking</h4>
+                    <p class="text-md leading-relaxed">
+                        In addition to tracking user consent, certain cookies may be used internally by Tasteroma for regulatory compliance tracking. This involves monitoring and recording specific data points to ensure that our website adheres to various legal and industry standards, particularly concerning data privacy and online conduct. These cookies might track interactions related to age verification, content access restrictions, or other compliance-related features. The data collected is primarily for internal auditing and demonstration of adherence to legal obligations. This proactive approach helps us maintain a trustworthy and legally compliant platform, ensuring that Tasteroma operates within the bounds of applicable laws and protects both our users and our business from potential regulatory issues.
+                    </p>
+                </div>
+                <!-- Point 40 -->
+                <div>
+                    <h4 class="2xl font-semibold text-bold-charcoal mb-3">40. Future Developments and Cookie Technology</h4>
+                    <p class="text-md leading-relaxed">
+                        The field of cookie technology and online tracking is constantly evolving, driven by technological advancements and shifting privacy regulations. Tasteroma is committed to staying at the forefront of these developments. We continuously research and evaluate new privacy-enhancing technologies and alternative tracking methods that offer better user control and data protection. As the industry moves towards more privacy-centric solutions (e.g., cookieless tracking, federated learning), we will adapt our practices accordingly. Our goal is to embrace innovations that allow us to continue providing a personalized and high-quality user experience while upholding the highest standards of privacy. Any significant changes to our cookie practices or the technologies we employ will be promptly communicated through updates to this Cookie Policy, ensuring you are always informed about how your data is handled on Tasteroma.
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-zesty-orange mb-6 mt-16">More Information</h3>
+            <p class="text-md mb-4 leading-relaxed">
+                We hope this Cookie Policy has provided you with a clear understanding of how Tasteroma uses cookies. If you have any further questions or require more information about our cookie practices, please do not hesitate to contact us. Your privacy is important to us, and we are always here to address your concerns.
+            </p>
+            <p class="text-md mb-8 leading-relaxed">
+                For more details on our overall data processing activities, please visit our <a href="privacy.html" class="text-zesty-orange hover:underline font-semibold">Privacy Policy</a>.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-bold-charcoal text-cream-white py-12 px-6 md:px-12 rounded-t-lg shadow-inner">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- About Tasteroma -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">About Tasteroma</h5>
+                <p class="text-sm leading-relaxed">
+                    Tasteroma is your premier destination for recipes that engage all your senses. We focus on the incredible interplay of taste and aroma, bringing you global flavors designed to fill your kitchen with unforgettable fragrances. Join our community and embark on a sensory cooking adventure.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">Quick Links</h5>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Home</a></li>
+                    <li><a href="blog.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Blog</a></li>
+                    <li><a href="privacy.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="text-cream-white hover:text-zesty-orange transition duration-300 text-sm">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact & Address -->
+            <div>
+                <h5 class="text-xl font-bold mb-4 text-zesty-orange">Contact Us</h5>
+                <p class="text-sm mb-2">Email: <a href="mailto:info@tasteroma.com" class="text-cream-white hover:text-zesty-orange transition duration-300">info@tasteroma.com</a></p>
+                <p class="text-sm mb-2">Phone: +91 12345 67890</p>
+                <p class="text-sm mb-2"><strong>Address:</strong></p>
+                <p class="text-sm leading-relaxed">
+                    Tasteroma Headquarters<br>
+                    123 Aroma Lane, Spice District<br>
+                    Flavor City, Delhi 110001<br>
+                    India
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-warm-spice-brown mt-8 pt-8 text-center text-sm">
+            &copy; 2025 Tasteroma. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Bar -->
+    <div id="cookie-consent-bar" class="hidden">
+        <p>
+            Tasteroma uses cookies to enhance your browsing experience, personalize content and ads, provide social media features, and analyze our traffic. By clicking "Accept All Cookies", you consent to the use of all cookies. If you click "Decline All", only strictly necessary cookies will be used. You can manage your preferences at any time.
+        </p>
+        <div class="actions">
+            <button class="accept" onclick="acceptCookies()">Accept All Cookies</button>
+            <button class="decline" onclick="declineCookies()">Decline All</button>
+            <button class="manage" onclick="manageCookiePreferences()">Manage Preferences</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const consentBar = document.getElementById('cookie-consent-bar');
+            const cookieConsent = localStorage.getItem('tasteroma_cookie_consent');
+
+            if (!cookieConsent) {
+                consentBar.classList.remove('hidden');
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem('tasteroma_cookie_consent', 'accepted');
+            document.getElementById('cookie-consent-bar').classList.add('hidden');
+            // Here you would typically load analytics and advertising scripts
+            console.log('All cookies accepted.');
+        }
+
+        function declineCookies() {
+            localStorage.setItem('tasteroma_cookie_consent', 'declined');
+            document.getElementById('cookie-consent-bar').classList.add('hidden');
+            // Here you would typically disable analytics and advertising scripts
+            console.log('Non-essential cookies declined.');
+        }
+
+        function manageCookiePreferences() {
+            // In a real application, this would open a modal or navigate to a page
+            // with more granular cookie settings. For this example, it just logs.
+            console.log('Manage preferences clicked. Implement granular control here.');
+            alert('This feature is for demonstration. In a full implementation, a detailed cookie settings panel would appear here.');
+        }
+    </script>
+</body>
+</html>
